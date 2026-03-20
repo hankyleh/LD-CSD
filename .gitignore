@@ -1,0 +1,6 @@
+# Python virtual environment
+.venv
+
+# pip package installation
+LDCSD.egg-info/
+LDCSD/__pycache__/

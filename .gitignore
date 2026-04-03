@@ -4,3 +4,6 @@
 # pip package installation
 LDCSD.egg-info/
 LDCSD/__pycache__/
+
+# results
+*.png

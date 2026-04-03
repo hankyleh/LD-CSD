@@ -243,7 +243,6 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
 
 def high_order_ingroup_iteration(g: int,
                          mesh : Mesh,
-                         epsilon_inner,
                          initial_angular,
                          xs_total_g,
                          stop_power_g,
@@ -267,7 +266,7 @@ def high_order_ingroup_iteration(g: int,
     angular = initial_angular.copy()
     scalar = 0.5*numpy.transpose(initial_angular) @ mesh.w
 
-    while (rel_change > epsilon_inner):
+    while (rel_change > options.epsilon["inner"]):
         s+=1
         scatter_source = compute_scatter_source(g, scalar, group_scalar, xs_scatter, mesh)
 
@@ -280,15 +279,17 @@ def high_order_ingroup_iteration(g: int,
         rel_change = np.linalg.norm(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
         print(f"s: {rel_change}")
 
-    return scalar
+    return scalar, angular
 
         # compute scattering source from initial guess
 
         # call sweep with this scattering source
+        
 
 
 
-# def energy_pass
+# def energy_pass():
+
     # return angualar flux distribution for full energy spectrum
 
 # def iterate_groups

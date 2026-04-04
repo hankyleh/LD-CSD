@@ -43,5 +43,7 @@ class linear:
     def __init__(self, fespace):
         self.size = 4*fespace.Nx
         self.vector = numpy.zeros(self.size)
+    def zero(self):
+        self.vector *= 0
     def append(self, value, index):
         self.vector[index] += value

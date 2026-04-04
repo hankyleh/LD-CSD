@@ -10,8 +10,8 @@ def form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound, M)
     # coefficients for absorption + streaming equations
     v1 = dx*((1/6)*(xs_total_g) + (1/(2*dE))*(stop_power_g))
     v2 = dx*((1/3)*(xs_total_g) + (1/(2*dE))*(stop_power_g))
-    v3 = dx*((1/6)*(xs_total_g) + (1/dE)*((-1/2)*stop_power_g + stop_power_bound))
-    v4 = dx*((1/3)*(xs_total_g) + (1/dE)*((-1/2)*stop_power_g))
+    v3 = dx*((1/3)*(xs_total_g) + (1/dE)*((-1/2)*stop_power_g + stop_power_bound))
+    v4 = dx*((1/6)*(xs_total_g) + (1/dE)*((-1/2)*stop_power_g))
 
     m00 = M[0, 0]
     m01 = M[0, 1]
@@ -107,6 +107,7 @@ def form_HO_RHS(b, dx, dE, I, M, stop_power_bound, upwind_e_flux, scatter_source
     m10 = M[1, 0]
     m11 = M[1, 1]
 
+
     for i in range(0, I):
         dxi = dx[i]
         ind_L_d = np.ravel_multi_index((i, 0, 0), (I, 2, 2))
@@ -120,18 +121,19 @@ def form_HO_RHS(b, dx, dE, I, M, stop_power_bound, upwind_e_flux, scatter_source
         b.append((scatter_source[ind_R_u]), ind_R_u)
     
     # external source
-        b.append((dxi*m00/6)*(q_g[0,0,i] + 2*q_g[0,1,i]),ind_L_u)
-        b.append((dxi*m01/6)*(q_g[1,0,i] + 2*q_g[1,1,i]),ind_L_u)
-        b.append((dxi*m10/6)*(q_g[0,0,i] + 2*q_g[0,1,i]),ind_R_u)
-        b.append((dxi*m11/6)*(q_g[1,0,i] + 2*q_g[1,1,i]),ind_R_u)
+        b.append((dxi*m00/6)*(q_g[ind_L_d] + 2*q_g[ind_L_u]),ind_L_u)
+        b.append((dxi*m01/6)*(q_g[ind_R_d] + 2*q_g[ind_R_u]),ind_L_u)
+        b.append((dxi*m10/6)*(q_g[ind_L_d] + 2*q_g[ind_L_u]),ind_R_u)
+        b.append((dxi*m11/6)*(q_g[ind_R_d] + 2*q_g[ind_R_u]),ind_R_u)
 
-        b.append((dxi*m00/6)*(2*q_g[0,0,i] + q_g[0,1,i]),ind_L_d)
-        b.append((dxi*m01/6)*(2*q_g[1,0,i] + q_g[1,1,i]),ind_L_d)
-        b.append((dxi*m10/6)*(2*q_g[0,0,i] + q_g[0,1,i]),ind_R_d)
-        b.append((dxi*m11/6)*(2*q_g[1,0,i] + q_g[1,1,i]),ind_R_d)
+        b.append((dxi*m00/6)*(2*q_g[ind_L_d] + q_g[ind_L_u]),ind_L_d)
+        b.append((dxi*m01/6)*(2*q_g[ind_R_d] + q_g[ind_R_u]),ind_L_d)
+        b.append((dxi*m10/6)*(2*q_g[ind_L_d] + q_g[ind_L_u]),ind_R_d)
+        b.append((dxi*m11/6)*(2*q_g[ind_R_d] + q_g[ind_R_u]),ind_R_d)
     # CSD source
-        b.append(((dxi/dE)*stop_power_bound[i]*(m00*upwind_e_flux[0] + m01*upwind_e_flux[1])),ind_L_u)
-        b.append(((dxi/dE)*stop_power_bound[i]*(m10*upwind_e_flux[0] + m11*upwind_e_flux[1])), ind_R_u)
+        b.append(((dxi/dE)*stop_power_bound[i]*(m00*upwind_e_flux[ind_L_d] + m01*upwind_e_flux[ind_R_d])),ind_L_u)
+        b.append(((dxi/dE)*stop_power_bound[i]*(m10*upwind_e_flux[ind_L_d] + m11*upwind_e_flux[ind_R_d])), ind_R_u)
+
     # Boundary cells TODO
 
 
@@ -159,10 +161,10 @@ def solve_DO(m : int,
     A = bilinear(fespace)
     b = linear(fespace)
 
+    b.zero()
 
     form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound_down, fespace.M)
     form_HO_RHS(b, dx, dE, I, fespace.M, stop_power_bound_up, upwind_e_flux, scatter_source, q_g)
-
 
     # Solve Linear system
     x = scipy.sparse.linalg.spsolve(A.matrix.tocsr(), b.vector)
@@ -189,13 +191,14 @@ def sweep(g : int,
     print(f"performing sweep in group {g}")
 
     angular_flux = numpy.zeros((mesh.M, 4*mesh.I))
-    scalar_flux = numpy.zeros((4*mesh.I))
-    psi = numpy.zeros((4*mesh.I))
     
+    psi = numpy.zeros((4*mesh.I))
+    scalar_flux = numpy.zeros((4*mesh.I))
+
     for m in  range(0, mesh.M):
         psi, ang_residuals = solve_DO(m, g, mesh, xs_total_g, stop_power_g, 
-                 stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux, q_g)
-        scalar_flux += mesh.w[m]*psi*0.5
+                 stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux[m], q_g)
+        scalar_flux += mesh.w[m]*psi
         angular_flux[m] = psi
         if options.residuals == True:
             coord_max = np.unravel_index(np.argmax(ang_residuals), (mesh.I, 2, 2))
@@ -204,7 +207,6 @@ def sweep(g : int,
                 txt.write(f"g = {g},    m={m}\n")
                 txt.write(f"maximum = {np.max(ang_residuals)} at {np.argmax(ang_residuals)} (i={coord_max[0]}, L/R={coord_max[1]}, beta={coord_max[2]})\n")
                 txt.write(f"minimum = {np.min(ang_residuals)} at {np.argmin(ang_residuals)} (i={coord_min[0]}, L/R={coord_min[1]}, beta={coord_min[2]})\n")
-                txt.write(f"L2 = {numpy.linalg.norm(ang_residuals)}\n")
                 txt.write("\n")
         
     return scalar_flux, angular_flux
@@ -224,8 +226,11 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
     
     for gp in range(0, mesh.G):
         sc = scalar[gp]
+         
         if gp == g:
             sc = scalar_g
+
+
         for i in range(0, I):
             ind_L_d = np.ravel_multi_index((i, 0, 0), (I, 2, 2))
             ind_L_u = np.ravel_multi_index((i, 0, 1), (I, 2, 2))
@@ -234,8 +239,10 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
 
             source[ind_L_u] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
             source[ind_R_u] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
+
             source[ind_L_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
             source[ind_R_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
+
     return source
 
 
@@ -244,6 +251,7 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
 def high_order_ingroup_iteration(g: int,
                          mesh : Mesh,
                          initial_angular,
+                         scalar,
                          xs_total_g,
                          stop_power_g,
                          stop_power_bound_down,
@@ -259,36 +267,67 @@ def high_order_ingroup_iteration(g: int,
     rel_change = 1
     s = 0
 
-    initial_angular = numpy.ones((mesh.M, 4*mesh.I))
+    # initial_angular = numpy.ones((mesh.M, 4*mesh.I))
     initial_scalar = numpy.transpose(initial_angular) @ mesh.w
-    # print(initial_scalar)
-
+    scalar_g = initial_scalar.copy()
     angular = initial_angular.copy()
-    scalar = 0.5*numpy.transpose(initial_angular) @ mesh.w
 
     while (rel_change > options.epsilon["inner"]):
         s+=1
-        scatter_source = compute_scatter_source(g, scalar, group_scalar, xs_scatter, mesh)
+        scatter_source = compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh)
 
         prev_angular = angular*1
         
-        scalar, angular = sweep(g, mesh, xs_total_g, stop_power_g, stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux, q_g)
-        # print(scalar)
-        # print(scatter_source)
-        # print(q_g)
-        rel_change = np.linalg.norm(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
-        print(f"s: {rel_change}")
+        scalar_g, angular = sweep(g, mesh, xs_total_g, stop_power_g, stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux, q_g)
+        max_change = np.max(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
+        max_loc = np.argmax(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
+        rel_change = np.linalg.norm(np.abs(prev_angular - angular)/prev_angular)
+        print(f"s: L2 {rel_change}, max {max_change} at {max_loc}")
 
-    return scalar, angular
+    return scalar_g, angular
 
-        # compute scattering source from initial guess
+def energy_pass(mesh : Mesh):
 
-        # call sweep with this scattering source
-        
+    # within each energy group, iterate on scattering source
 
+    scalar_result = np.zeros((mesh.G, 4*mesh.I))
+    angular_result = np.zeros((mesh.G, mesh.M, 4*mesh.I))
+    initial_angular = np.zeros((mesh.G, mesh.M, 4*mesh.I))
 
+    upwind_e_flux = np.zeros((mesh.M, 4*mesh.I))
 
-# def energy_pass():
+    for g in range(0, mesh.G):
+
+        if g > 0:
+            stop_power_bound_up = mesh.stopping_power_d[g-1]
+        else:
+            stop_power_bound_up = 0 * (mesh.stopping_power_d[g-1])
+            upwind_e_flux = np.zeros((mesh.M, 4*mesh.I))
+
+        change = 1
+        n=0
+        while (n < 1):
+        # while (change > options.epsilon["outer"]):
+            n += 1
+            print(f"loop {n} of group {g}")
+            scalar, angular = high_order_ingroup_iteration(g,
+                            mesh,
+                            angular_result[g],
+                            scalar_result,
+                            mesh.xs_total[g],
+                            mesh.stopping_power[g],
+                            mesh.stopping_power_d[g],
+                            stop_power_bound_up,
+                            upwind_e_flux,
+                            scalar_result[g],
+                            mesh.xs_scatter,
+                            mesh.angular_source[g])
+            change = np.linalg.norm(np.abs((scalar_result[g] - scalar)/scalar_result[g]))
+            scalar_result[g] = scalar
+            angular_result[g] = angular
+
+        # upwind_e_flux =  angular
+    return scalar_result, angular
 
     # return angualar flux distribution for full energy spectrum
 

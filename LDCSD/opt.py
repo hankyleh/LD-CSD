@@ -9,7 +9,8 @@ class Options:
                        "matrix_solver" : "spsolve"}
         self.residuals = False
         self.keep_angular = False
-        self.epsilon = {"inner" : 1e-5}
+        self.epsilon = {"inner" : 1e-5,
+                        "outer" : 1e-6}
         
         
         if kwargs.get("silence", True):

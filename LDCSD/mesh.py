@@ -21,17 +21,34 @@ class Mesh:
         self.xs_total = np.zeros((self.G, self.I))
         self.xs_scatter = np.zeros((self.G,self.G, self.I))
         self.stopping_power = np.zeros((self.G, self.I))
-        self.scalar_source = np.zeros((self.G, self.I))
-        self.angular_source = np.zeros((self.G, self.I))
+        self.stopping_power_d = np.zeros((self.G, self.I))
+        self.scalar_source = np.zeros((self.G, 4*self.I))
+        self.angular_source = np.zeros((self.G, 4*self.I))
 
         for r in range(len(regions.materials)):
-            truth = 1*(self.cell_centers < regions.bounds[r+1])*(self.cell_centers > regions.bounds[r])
+            truth = 1*(self.cell_centers <= regions.bounds[r+1])*(self.cell_centers > regions.bounds[r])
             index = np.trim_zeros(np.array(truth * (np.arange(0, self.I)+1))) - 1
             for g in range(0, self.G):
                 self.xs_total[g, index] = regions.materials[r].total[g]
                 self.stopping_power[g, index] = regions.materials[r].stopping_power[g]
-                self.scalar_source[g, index] = regions.materials[r].scalar_source[g]
-                self.angular_source[g, index] = regions.materials[r].angular_source[g]
+                self.stopping_power_d[g, index] = regions.materials[r].stopping_power_d[g]
+                
+                ld = np.ravel_multi_index((index, 0, 0), (self.I, 2, 2))
+                lu = np.ravel_multi_index((index, 0, 1), (self.I, 2, 2))
+                rd = np.ravel_multi_index((index, 1, 0), (self.I, 2, 2))
+                ru = np.ravel_multi_index((index, 1, 1), (self.I, 2, 2))
+
+                self.scalar_source[g, ld] = regions.materials[r].scalar_source[g]
+                self.scalar_source[g, lu] = regions.materials[r].scalar_source[g]
+                self.scalar_source[g, rd] = regions.materials[r].scalar_source[g]
+                self.scalar_source[g, ru] = regions.materials[r].scalar_source[g]
+
+                self.angular_source[g, ld] = regions.materials[r].angular_source[g]
+                self.angular_source[g, lu] = regions.materials[r].angular_source[g]
+                self.angular_source[g, rd] = regions.materials[r].angular_source[g]
+                self.angular_source[g, ru] = regions.materials[r].angular_source[g]
+                print(self.angular_source[g, ru])
+
                 for gp in range(0, self.G):
                     self.xs_scatter[g, gp,index] = regions.materials[r].scatter[g, gp]
 

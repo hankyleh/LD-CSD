@@ -1,57 +1,61 @@
 import numpy as np
+import LDCSD
 
 class Mesh:
-    def __init__(self, x_bounds, group_bounds, regions, boundaries, angles, weights):
-        self.x_bounds = x_bounds
+    def __init__(self, x_edges, group_bounds, mat_regions, bounds, angles, weights):
+        global mu, w, x_bounds, I, regions, boundaries, cell_centers, dx
+        LDCSD.x_bounds = x_edges
+
+        LDCSD.I = x_edges.size-1
+        LDCSD.regions = mat_regions
+        LDCSD.boundaries = bounds
+        LDCSD.cell_centers = (x_edges[1:]+x_edges[0:-1]) * 0.5
+        LDCSD.dx = (x_edges[1:] - x_edges[0:-1])
+
         self.group_bounds = group_bounds
         self.G = group_bounds.size-1
-        self.I = x_bounds.size-1
-        self.regions = regions
-        self.boundaries = boundaries
-        
-        self.cell_centers = (x_bounds[1:]+x_bounds[0:-1]) * 0.5
-        self.dx = (x_bounds[1:] - x_bounds[0:-1])
         self.dE = (group_bounds[1:] - group_bounds[0:-1])
 
-        self.mu = angles
-        self.w = weights
+        # angle -- TODO make check ordering
+        LDCSD.mu = angles
+        LDCSD.w = weights
 
         if weights.size != angles.size:
             raise Exception(f"Attempted to initialize mesh with {angles.size} angles and {weights.size} weights")
         self.M = angles.size
 
-        self.xs_total = np.zeros((self.G, self.I))
-        self.xs_scatter = np.zeros((self.G,self.G, self.I))
-        self.stopping_power = np.zeros((self.G, self.I))
-        self.stopping_power_d = np.zeros((self.G, self.I))
-        self.scalar_source = np.zeros((self.G, 4*self.I))
-        self.angular_source = np.zeros((self.G, 4*self.I))
+        self.xs_total = np.zeros((self.G, LDCSD.I))
+        self.xs_scatter = np.zeros((self.G,self.G, LDCSD.I))
+        self.stopping_power = np.zeros((self.G, LDCSD.I))
+        self.stopping_power_d = np.zeros((self.G, LDCSD.I))
+        self.scalar_source = np.zeros((self.G, 4*LDCSD.I))
+        self.angular_source = np.zeros((self.G, 4*LDCSD.I))
 
-        for r in range(len(regions.materials)):
-            truth = 1*(self.cell_centers <= regions.bounds[r+1])*(self.cell_centers > regions.bounds[r])
-            index = np.trim_zeros(np.array(truth * (np.arange(0, self.I)+1))) - 1
+        for r in range(len(mat_regions.materials)):
+            truth = 1*(LDCSD.cell_centers <= mat_regions.bounds[r+1])*(LDCSD.cell_centers > mat_regions.bounds[r])
+            index = np.trim_zeros(np.array(truth * (np.arange(0, LDCSD.I)+1))) - 1
             for g in range(0, self.G):
-                self.xs_total[g, index] = regions.materials[r].total[g]
-                self.stopping_power[g, index] = regions.materials[r].stopping_power[g]
-                self.stopping_power_d[g, index] = regions.materials[r].stopping_power_d[g]
+                self.xs_total[g, index] = mat_regions.materials[r].total[g]
+                self.stopping_power[g, index] = mat_regions.materials[r].stopping_power[g]
+                self.stopping_power_d[g, index] = mat_regions.materials[r].stopping_power_d[g]
                 
-                ld = np.ravel_multi_index((index, 0, 0), (self.I, 2, 2))
-                lu = np.ravel_multi_index((index, 0, 1), (self.I, 2, 2))
-                rd = np.ravel_multi_index((index, 1, 0), (self.I, 2, 2))
-                ru = np.ravel_multi_index((index, 1, 1), (self.I, 2, 2))
+                ld = np.ravel_multi_index((index, 0, 0), (LDCSD.I, 2, 2))
+                lu = np.ravel_multi_index((index, 0, 1), (LDCSD.I, 2, 2))
+                rd = np.ravel_multi_index((index, 1, 0), (LDCSD.I, 2, 2))
+                ru = np.ravel_multi_index((index, 1, 1), (LDCSD.I, 2, 2))
 
-                self.scalar_source[g, ld] = regions.materials[r].scalar_source[g]
-                self.scalar_source[g, lu] = regions.materials[r].scalar_source[g]
-                self.scalar_source[g, rd] = regions.materials[r].scalar_source[g]
-                self.scalar_source[g, ru] = regions.materials[r].scalar_source[g]
+                self.scalar_source[g, ld] = mat_regions.materials[r].scalar_source[g]
+                self.scalar_source[g, lu] = mat_regions.materials[r].scalar_source[g]
+                self.scalar_source[g, rd] = mat_regions.materials[r].scalar_source[g]
+                self.scalar_source[g, ru] = mat_regions.materials[r].scalar_source[g]
 
-                self.angular_source[g, ld] = regions.materials[r].angular_source[g]
-                self.angular_source[g, lu] = regions.materials[r].angular_source[g]
-                self.angular_source[g, rd] = regions.materials[r].angular_source[g]
-                self.angular_source[g, ru] = regions.materials[r].angular_source[g]
+                self.angular_source[g, ld] = mat_regions.materials[r].angular_source[g]
+                self.angular_source[g, lu] = mat_regions.materials[r].angular_source[g]
+                self.angular_source[g, rd] = mat_regions.materials[r].angular_source[g]
+                self.angular_source[g, ru] = mat_regions.materials[r].angular_source[g]
                 print(self.angular_source[g, ru])
 
                 for gp in range(0, self.G):
-                    self.xs_scatter[g, gp,index] = regions.materials[r].scatter[g, gp]
+                    self.xs_scatter[g, gp,index] = mat_regions.materials[r].scatter[g, gp]
 
 

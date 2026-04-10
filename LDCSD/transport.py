@@ -3,6 +3,8 @@ from .mesh import Mesh
 import numpy as np
 import scipy
 
+import LDCSD
+
 from LDCSD import options
 
 def form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound, M):
@@ -151,17 +153,17 @@ def solve_DO(m : int,
              ):
     # spatial mesh sweep for one Discrete Ordinate (DO) and energy group
     
-    mu = mesh.mu[m]
+    mu = LDCSD.mu[m]
     dE = mesh.dE[g]
-    dx = mesh.dx
-    I = mesh.I
+    dx = LDCSD.dx
+    I = LDCSD.I
 
     # Initialize Bilinear and Linear forms
     fespace = LD_space(mesh, g)
     A = bilinear(fespace)
     b = linear(fespace)
 
-    size = 4*mesh.I
+    size = 4*LDCSD.I
 
     
 
@@ -196,19 +198,19 @@ def sweep(g : int,
 
     print(f"performing sweep in group {g}")
 
-    angular_flux = np.zeros((mesh.M, 4*mesh.I))
+    angular_flux = np.zeros((mesh.M, 4*LDCSD.I))
     
-    psi = np.zeros((4*mesh.I))
-    scalar_flux = np.zeros((4*mesh.I))
+    psi = np.zeros((4*LDCSD.I))
+    scalar_flux = np.zeros((4*LDCSD.I))
 
     for m in  range(0, mesh.M):
         psi, ang_residuals = solve_DO(m, g, mesh, xs_total_g, stop_power_g, 
                  stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux[m], q_g)
-        scalar_flux += mesh.w[m]*psi
+        scalar_flux += LDCSD.w[m]*psi
         angular_flux[m] = psi
         if options.residuals == True:
-            coord_max = np.unravel_index(np.argmax(ang_residuals), (mesh.I, 2, 2))
-            coord_min = np.unravel_index(np.argmin(ang_residuals), (mesh.I, 2, 2))
+            coord_max = np.unravel_index(np.argmax(ang_residuals), (LDCSD.I, 2, 2))
+            coord_min = np.unravel_index(np.argmin(ang_residuals), (LDCSD.I, 2, 2))
             with open(options.residual_file, "a") as txt:
                 txt.write(f"g = {g},    m={m}\n")
                 txt.write(f"maximum = {np.max(ang_residuals)} at {np.argmax(ang_residuals)} (i={coord_max[0]}, L/R={coord_max[1]}, beta={coord_max[2]})\n")
@@ -218,10 +220,10 @@ def sweep(g : int,
     return scalar_flux, angular_flux
 
 def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
-    I = mesh.I
-    dx = mesh.dx
+    I = LDCSD.I
+    dx = LDCSD.dx
     dE = mesh.dE
-    source = np.zeros((4*mesh.I))
+    source = np.zeros((4*LDCSD.I))
 
     fespace = LD_space(mesh, g)
     m00 = fespace.M[0, 0]
@@ -273,8 +275,8 @@ def high_order_ingroup_iteration(g: int,
     rel_change = 1
     s = 0
 
-    # initial_angular = np.ones((mesh.M, 4*mesh.I))
-    initial_scalar = np.transpose(initial_angular) @ mesh.w
+    # initial_angular = np.ones((mesh.M, 4*LDCSD.I))
+    initial_scalar = np.transpose(initial_angular) @ LDCSD.w
     scalar_g = initial_scalar.copy()
     angular = initial_angular.copy()
 
@@ -305,11 +307,11 @@ def energy_pass(mesh : Mesh):
 
     # within each energy group, iterate on scattering source
 
-    scalar_result = np.zeros((mesh.G, 4*mesh.I))
-    angular_result = np.zeros((mesh.G, mesh.M, 4*mesh.I))
-    initial_angular = np.zeros((mesh.G, mesh.M, 4*mesh.I))
+    scalar_result = np.zeros((mesh.G, 4*LDCSD.I))
+    angular_result = np.zeros((mesh.G, mesh.M, 4*LDCSD.I))
+    initial_angular = np.zeros((mesh.G, mesh.M, 4*LDCSD.I))
 
-    upwind_e_flux = np.zeros((mesh.M, 4*mesh.I))
+    upwind_e_flux = np.zeros((mesh.M, 4*LDCSD.I))
 
     for g in range(0, mesh.G):
 
@@ -317,7 +319,7 @@ def energy_pass(mesh : Mesh):
             stop_power_bound_up = mesh.stopping_power_d[g-1]
         else:
             stop_power_bound_up = 0 * (mesh.stopping_power_d[g-1])
-            upwind_e_flux = np.zeros((mesh.M, 4*mesh.I))
+            upwind_e_flux = np.zeros((mesh.M, 4*LDCSD.I))
 
         change = 1
         n=0

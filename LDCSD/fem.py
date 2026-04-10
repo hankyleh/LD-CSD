@@ -2,13 +2,15 @@ import numpy
 import scipy
 from .mesh import Mesh
 
+import LDCSD
+
 class LD_space:
     def __init__(self, 
                  mesh : Mesh, 
                  g : int,
                  lumped=False):
         self.group_bounds = mesh.group_bounds
-        self.x_bounds = mesh.x_bounds
+        self.x_bounds = LDCSD.x_bounds
         self.Nx = self.x_bounds.size - 1
         self.g = g
         self.dx = numpy.diff(self.x_bounds)

@@ -56,10 +56,10 @@ bcs = LDCSD.Boundaries(
 )
 
 mesh = LDCSD.Mesh(
-    x_bounds = x_mesh, 
+    x_edges = x_mesh, 
     group_bounds = e_mesh,
-    regions = regions,
-    boundaries = bcs,
+    mat_regions = regions,
+    bounds = bcs,
     angles = s16angles,
     weights = s16weights
 )

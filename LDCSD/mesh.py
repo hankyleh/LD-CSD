@@ -53,7 +53,6 @@ class Mesh:
                 self.angular_source[g, lu] = mat_regions.materials[r].angular_source[g]
                 self.angular_source[g, rd] = mat_regions.materials[r].angular_source[g]
                 self.angular_source[g, ru] = mat_regions.materials[r].angular_source[g]
-                print(self.angular_source[g, ru])
 
                 for gp in range(0, LDCSD.G):
                     self.xs_scatter[g, gp,index] = mat_regions.materials[r].scatter[g, gp]

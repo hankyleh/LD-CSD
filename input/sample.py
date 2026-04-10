@@ -9,13 +9,9 @@ x_mesh = np.linspace(0, 10, X+1)
 e_mesh = np.linspace(0, 1000, G+1)
 
 dE = np.diff(e_mesh)
-print(dE)
+
 
 s16angles, s16weights = np.polynomial.legendre.leggauss(16)
-
-print("quadrature")
-print(s16angles)
-print(s16weights)
 
 
 # Inputs, initialize LDCSD
@@ -80,6 +76,12 @@ mesh = LDCSD.Mesh(
 # options = LDCSD.options(method = "high_order_transport")
 LDCSD.options.scheme["method"] = "high_order_transport"
 LDCSD.options.output_residuals()
+
+
+
+
+LDCSD.boundary_condition(left=np.array([1, 0, 0]), left_mode = "incoming")
+
 
 # boundary conditions; [M by 2](angular, energy)
 incoming_L = np.zeros((LDCSD.M, 2))

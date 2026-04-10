@@ -8,11 +8,13 @@ class Mesh:
         self.I = x_bounds.size-1
         self.regions = regions
         self.boundaries = boundaries
-        self.mu = angles
-        self.w = weights
+        
         self.cell_centers = (x_bounds[1:]+x_bounds[0:-1]) * 0.5
         self.dx = (x_bounds[1:] - x_bounds[0:-1])
         self.dE = (group_bounds[1:] - group_bounds[0:-1])
+
+        self.mu = angles
+        self.w = weights
 
         if weights.size != angles.size:
             raise Exception(f"Attempted to initialize mesh with {angles.size} angles and {weights.size} weights")

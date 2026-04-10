@@ -32,11 +32,12 @@ class LD_space:
 class bilinear:
     def __init__(self, fespace):
         self.size = 4*fespace.Nx
-        self.matrix = scipy.sparse.coo_array((self.size, self.size))
+        self.matrix = scipy.sparse.lil_array((self.size, self.size))
     def append(self, value, row, column):
-        self.matrix.data = numpy.append(self.matrix.data, value)
-        self.matrix.row = numpy.append(self.matrix.row, row)
-        self.matrix.col = numpy.append(self.matrix.col, column)
+        self.matrix[row, column] += value
+        # self.matrix.data = numpy.append(self.matrix.data, value)
+        # self.matrix.row = numpy.append(self.matrix.row, row)
+        # self.matrix.col = numpy.append(self.matrix.col, column)
 
 
 class linear:

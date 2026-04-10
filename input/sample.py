@@ -1,49 +1,53 @@
 import LDCSD
 from LDCSD import options
 import matplotlib.pyplot as plt
-import numpy
-
+import numpy as np
 # Physics and parameters
-X = 100
+X = 50
 G = 3
-x_mesh = numpy.linspace(0, 3, X+1)
-e_mesh = numpy.linspace(0, 1000, G+1)
+x_mesh = np.linspace(0, 10, X+1)
+e_mesh = np.linspace(0, 1000, G+1)
 
-dE = numpy.diff(e_mesh)
+dE = np.diff(e_mesh)
 print(dE)
 
-s4angles = numpy.array([-0.3399810435848563, 0.3399810435848563, -0.8611363115940526, 0.8611363115940526])
-s4weights = numpy.array([0.6521451548625461, 0.6521451548625461, 0.3478548451374538, 0.3478548451374538])
+s16angles, s16weights = np.polynomial.legendre.leggauss(16)
+
+print("quadrature")
+print(s16angles)
+print(s16weights)
+
 
 # Inputs, initialize LDCSD
 m1 = LDCSD.Material(
     G = G,
-    stopping_power = numpy.array([0.1, 0.2, 0.3]),
-    stopping_power_d = numpy.array([0.15, 0.25, 0.35]),
-    total = numpy.array([0.3, 0.8, 0.1]),
-    scatter = numpy.array([[0.02, 0.01, 0.01],
-                          [0.0, 0.01, 0.01],
-                          [0.0, 0.0, 0.01]]),
-    scalar_source = numpy.array([1.0, 0.5, 0.1])
+    stopping_power=np.array([0.4, 0.6, 0.8]),
+    stopping_power_d = np.array([0.45, 0.65, 0.85]),
+    total = np.array([0.1, 3, 0.7]),
+    scatter = np.array([[0.0/dE[0], 0.085/dE[1], 0.0/dE[2]],   # value is *average* over E0,
+                           [0.0/dE[0], 1.0/dE[1], 2.0/dE[2]],   # integral over E1.
+                           [0.0/dE[0], 0.0/dE[1], 0.3/dE[2]]]),
+    # scalar_source = np.array([0.5, 0.25, 0.1])
+    scalar_source = np.array([2, 0.5, 0])
 )
 
 m2 = LDCSD.Material(
     G = G,
-    stopping_power=0*numpy.array([0.01, 0.02, 0.03]),
-    stopping_power_d = 0*numpy.array([0.015, 0.025, 0.035]),
-    total = numpy.array([2, 10, 7]),
-    scatter = numpy.array([[1.6/dE[0], 0.3/dE[1], 0.1/dE[2]],   # value is *average* over E0,
-                           [0.0/dE[0], 9.5/dE[1], 0.2/dE[2]],   # integral over E1.
-                           [0.0/dE[0], 0.0/dE[1], 0.0/dE[2]]]),
-    # scalar_source = numpy.array([0.5, 0.25, 0.1])
-    scalar_source = numpy.array([2, 0, 0])
+    stopping_power=np.array([0.4, 0.6, 0.8]),
+    stopping_power_d = np.array([0.45, 0.65, 0.85]),
+    total = np.array([0.2, 0.8, 1.0]),
+    scatter = np.array([[0.1/dE[0], 0.1/dE[1], 0.0/dE[2]],   # value is *average* over E0,
+                           [0.0/dE[0], 0.45/dE[1], 0.05/dE[2]],   # integral over E1.
+                           [0.0/dE[0], 0.0/dE[1], 0.5/dE[2]]]),
+    # scalar_source = np.array([0.5, 0.25, 0.1])
+    scalar_source = np.array([2, 0.5, 0])
 )
 
 regions = LDCSD.Regions(
     # bounds = [0, 7.0, 10],
     # materials = [m1, m2]
-    bounds = [0, 3],
-    materials = [m2]
+    bounds = [0, 3,10],
+    materials = [m2,m1]
 )
 
 bcs = LDCSD.Boundaries(
@@ -56,8 +60,8 @@ mesh = LDCSD.Mesh(
     group_bounds = e_mesh,
     regions = regions,
     boundaries = bcs,
-    angles = s4angles,
-    weights = s4weights
+    angles = s16angles,
+    weights = s16weights
 )
 
 # print(mesh.x_bounds)
@@ -76,25 +80,25 @@ mesh = LDCSD.Mesh(
 # options = LDCSD.options(method = "high_order_transport")
 LDCSD.options.scheme["method"] = "high_order_transport"
 LDCSD.options.output_residuals()
-x = LDCSD.run(mesh)
+x = LDCSD.high_order(mesh)
 
 
 
 plt.figure()
 I = x_mesh.size-1
 for g in range(0, mesh.G):
-    plot_mesh = numpy.array([])
-    plot_up = numpy.array([])
-    plot_down = numpy.array([])
+    plot_mesh = np.array([])
+    plot_up = np.array([])
+    plot_down = np.array([])
     for i in range(0, I):
-        plot_mesh = numpy.append(plot_mesh, [x_mesh[i], x_mesh[i+1]])
-        plot_up = numpy.append(plot_up, [
-            x[g, numpy.ravel_multi_index((i, 0, 0),(I, 2, 2))],
-            x[g, numpy.ravel_multi_index((i, 1, 0),(I, 2, 2))]
+        plot_mesh = np.append(plot_mesh, [x_mesh[i], x_mesh[i+1]])
+        plot_up = np.append(plot_up, [
+            x[g, np.ravel_multi_index((i, 0, 0),(I, 2, 2))],
+            x[g, np.ravel_multi_index((i, 1, 0),(I, 2, 2))]
         ])
-        plot_down = numpy.append(plot_down, [
-            x[g, numpy.ravel_multi_index((i, 0, 1),(I, 2, 2))],
-            x[g, numpy.ravel_multi_index((i, 1, 1),(I, 2, 2))]
+        plot_down = np.append(plot_down, [
+            x[g, np.ravel_multi_index((i, 0, 1),(I, 2, 2))],
+            x[g, np.ravel_multi_index((i, 1, 1),(I, 2, 2))]
         ])
 
     plt.plot(plot_mesh, plot_up, label=f"g{g}, up")

@@ -4,7 +4,7 @@ from LDCSD import options
 import numpy as np
 
 
-def run(mesh):
+def high_order(mesh):
     if options.scheme["method"] == "high_order_transport":
         # run high-order iteration scheme here
         scalar, _ = transport.energy_pass(mesh)

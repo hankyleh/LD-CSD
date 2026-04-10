@@ -161,13 +161,19 @@ def solve_DO(m : int,
     A = bilinear(fespace)
     b = linear(fespace)
 
+    size = 4*mesh.I
+
+    
+
     b.zero()
 
     form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound_down, fespace.M)
     form_HO_RHS(b, dx, dE, I, fespace.M, stop_power_bound_up, upwind_e_flux, scatter_source, q_g)
-
+    sA_iLU = scipy.sparse.linalg.spilu(A.matrix.tocsr())
+    M = scipy.sparse.linalg.LinearOperator((size, size), sA_iLU.solve)
     # Solve Linear system
-    x = scipy.sparse.linalg.spsolve(A.matrix.tocsr(), b.vector)
+    x, _ = scipy.sparse.linalg.bicgstab(A.matrix.tocsr(), b.vector, M=M)
+    # x = scipy.sparse.linalg.spsolve(A.matrix.tocsr(), b.vector)
     
     residual = 0
     if options.residuals == True:
@@ -190,10 +196,10 @@ def sweep(g : int,
 
     print(f"performing sweep in group {g}")
 
-    angular_flux = numpy.zeros((mesh.M, 4*mesh.I))
+    angular_flux = np.zeros((mesh.M, 4*mesh.I))
     
-    psi = numpy.zeros((4*mesh.I))
-    scalar_flux = numpy.zeros((4*mesh.I))
+    psi = np.zeros((4*mesh.I))
+    scalar_flux = np.zeros((4*mesh.I))
 
     for m in  range(0, mesh.M):
         psi, ang_residuals = solve_DO(m, g, mesh, xs_total_g, stop_power_g, 
@@ -215,7 +221,7 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
     I = mesh.I
     dx = mesh.dx
     dE = mesh.dE
-    source = numpy.zeros((4*mesh.I))
+    source = np.zeros((4*mesh.I))
 
     fespace = LD_space(mesh, g)
     m00 = fespace.M[0, 0]
@@ -267,8 +273,8 @@ def high_order_ingroup_iteration(g: int,
     rel_change = 1
     s = 0
 
-    # initial_angular = numpy.ones((mesh.M, 4*mesh.I))
-    initial_scalar = numpy.transpose(initial_angular) @ mesh.w
+    # initial_angular = np.ones((mesh.M, 4*mesh.I))
+    initial_scalar = np.transpose(initial_angular) @ mesh.w
     scalar_g = initial_scalar.copy()
     angular = initial_angular.copy()
 
@@ -285,6 +291,15 @@ def high_order_ingroup_iteration(g: int,
         print(f"s: L2 {rel_change}, max {max_change} at {max_loc}")
 
     return scalar_g, angular
+
+def calculate_closure(F_closure, F_bound, angular_flux, mesh : Mesh):
+    # calculate 'F' closure term for a single group for use in SMM equation.
+    # F = int_{-1}^1 d\mu ((1/3) - \mu&2)\psi(x, \mu)
+
+    # Result : write F and F_bound (cell-edge closure) to variables 'F_closure' and 'F_bound'
+
+
+    pass
 
 def energy_pass(mesh : Mesh):
 

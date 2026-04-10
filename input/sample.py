@@ -3,7 +3,7 @@ from LDCSD import options
 import matplotlib.pyplot as plt
 import numpy as np
 # Physics and parameters
-X = 50
+X = 10
 G = 3
 x_mesh = np.linspace(0, 10, X+1)
 e_mesh = np.linspace(0, 1000, G+1)
@@ -46,8 +46,8 @@ m2 = LDCSD.Material(
 regions = LDCSD.Regions(
     # bounds = [0, 7.0, 10],
     # materials = [m1, m2]
-    bounds = [0, 3,10],
-    materials = [m2,m1]
+    bounds = [0, 10],
+    materials = [m1]
 )
 
 bcs = LDCSD.Boundaries(
@@ -80,7 +80,21 @@ mesh = LDCSD.Mesh(
 # options = LDCSD.options(method = "high_order_transport")
 LDCSD.options.scheme["method"] = "high_order_transport"
 LDCSD.options.output_residuals()
-x = LDCSD.high_order(mesh)
+
+# boundary conditions; [M by 2](angular, energy)
+incoming_L = np.zeros((LDCSD.M, 2))
+incoming_R = np.zeros((LDCSD.M, 2))
+
+
+x, angular = LDCSD.high_order(mesh)
+F_closure = np.zeros((4*LDCSD.I))
+F_bound = np.zeros((2*(LDCSD.I+1)))
+LDCSD.transport.calculate_closure(F_closure, F_bound, angular, incoming_L, incoming_R)
+
+print("closure value")
+print(F_closure)
+print("closure on boundaries")
+print(F_bound)
 
 
 

@@ -1,988 +1,2240 @@
 g = 0,    m=0
-maximum = 2.220446049250313e-16 at 119 (i=29, L/R=1, beta=1)
-minimum = -2.706168622523819e-16 at 50 (i=12, L/R=1, beta=0)
+maximum = 6.661338147750939e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -5.551115123125783e-16 at 16 (i=4, L/R=0, beta=0)
 
 g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -2.706168622523819e-16 at 78 (i=19, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -6.661338147750939e-16 at 2 (i=0, L/R=1, beta=0)
 
 g = 0,    m=2
-maximum = 2.498001805406602e-16 at 54 (i=13, L/R=1, beta=0)
-minimum = -2.220446049250313e-16 at 90 (i=22, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 2 (i=0, L/R=1, beta=0)
 
 g = 0,    m=3
-maximum = 2.220446049250313e-16 at 102 (i=25, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 107 (i=26, L/R=1, beta=1)
+maximum = 5.551115123125783e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -4.440892098500626e-16 at 5 (i=1, L/R=0, beta=1)
 
 g = 0,    m=4
-maximum = 1.5265566588595902e-16 at 132 (i=33, L/R=0, beta=0)
-minimum = -1.8735013540549517e-16 at 78 (i=19, L/R=1, beta=0)
+maximum = 6.661338147750939e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -6.661338147750939e-16 at 11 (i=2, L/R=1, beta=1)
 
 g = 0,    m=5
-maximum = 1.1102230246251565e-16 at 98 (i=24, L/R=1, beta=0)
-minimum = -1.8735013540549517e-16 at 58 (i=14, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -3.885780586188048e-16 at 22 (i=5, L/R=1, beta=0)
 
 g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 126 (i=31, L/R=1, beta=0)
+maximum = 3.885780586188048e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
 
 g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
-minimum = -4.85722573273506e-17 at 70 (i=17, L/R=1, beta=0)
+maximum = 1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
 
 g = 0,    m=8
-maximum = 3.469446951953614e-17 at 185 (i=46, L/R=0, beta=1)
-minimum = -3.469446951953614e-17 at 129 (i=32, L/R=0, beta=1)
+maximum = 1.6653345369377348e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -8.326672684688674e-17 at 14 (i=3, L/R=1, beta=0)
 
 g = 0,    m=9
-maximum = 8.326672684688674e-17 at 89 (i=22, L/R=0, beta=1)
-minimum = -9.020562075079397e-17 at 156 (i=39, L/R=0, beta=0)
+maximum = 3.885780586188048e-16 at 34 (i=8, L/R=1, beta=0)
+minimum = -3.608224830031759e-16 at 16 (i=4, L/R=0, beta=0)
 
 g = 0,    m=10
-maximum = 1.8041124150158794e-16 at 196 (i=49, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 140 (i=35, L/R=0, beta=0)
+maximum = 3.885780586188048e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -4.996003610813204e-16 at 38 (i=9, L/R=1, beta=0)
 
 g = 0,    m=11
-maximum = 1.942890293094024e-16 at 145 (i=36, L/R=0, beta=1)
-minimum = -1.8041124150158794e-16 at 112 (i=28, L/R=0, beta=0)
+maximum = 1.0547118733938987e-15 at 36 (i=9, L/R=0, beta=0)
+minimum = -4.440892098500626e-16 at 24 (i=6, L/R=0, beta=0)
 
 g = 0,    m=12
-maximum = 1.6653345369377348e-16 at 115 (i=28, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 125 (i=31, L/R=0, beta=1)
+maximum = 5.551115123125783e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -6.106226635438361e-16 at 24 (i=6, L/R=0, beta=0)
 
 g = 0,    m=13
-maximum = 1.942890293094024e-16 at 116 (i=29, L/R=0, beta=0)
-minimum = -2.498001805406602e-16 at 137 (i=34, L/R=0, beta=1)
+maximum = 5.551115123125783e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -5.551115123125783e-16 at 36 (i=9, L/R=0, beta=0)
 
 g = 0,    m=14
-maximum = 2.498001805406602e-16 at 122 (i=30, L/R=1, beta=0)
-minimum = -2.498001805406602e-16 at 144 (i=36, L/R=0, beta=0)
+maximum = 3.3306690738754696e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 36 (i=9, L/R=0, beta=0)
 
 g = 0,    m=15
-maximum = 2.220446049250313e-16 at 138 (i=34, L/R=1, beta=0)
-minimum = -3.5388358909926865e-16 at 180 (i=45, L/R=0, beta=0)
+maximum = 6.661338147750939e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 36 (i=9, L/R=0, beta=0)
 
 g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.608224830031759e-16 at 58 (i=14, L/R=1, beta=0)
+maximum = 6.661338147750939e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -5.551115123125783e-16 at 16 (i=4, L/R=0, beta=0)
 
 g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 46 (i=11, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -6.661338147750939e-16 at 2 (i=0, L/R=1, beta=0)
 
 g = 0,    m=2
-maximum = 2.220446049250313e-16 at 11 (i=2, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 74 (i=18, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 2 (i=0, L/R=1, beta=0)
 
 g = 0,    m=3
-maximum = 2.220446049250313e-16 at 102 (i=25, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 107 (i=26, L/R=1, beta=1)
+maximum = 5.551115123125783e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -4.440892098500626e-16 at 5 (i=1, L/R=0, beta=1)
 
 g = 0,    m=4
-maximum = 2.220446049250313e-16 at 47 (i=11, L/R=1, beta=1)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
+maximum = 6.661338147750939e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -6.661338147750939e-16 at 11 (i=2, L/R=1, beta=1)
 
 g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -1.5959455978986625e-16 at 70 (i=17, L/R=1, beta=0)
+maximum = 4.440892098500626e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -3.885780586188048e-16 at 22 (i=5, L/R=1, beta=0)
 
 g = 0,    m=6
-maximum = 9.71445146547012e-17 at 22 (i=5, L/R=1, beta=0)
-minimum = -1.1102230246251565e-16 at 166 (i=41, L/R=1, beta=0)
+maximum = 3.885780586188048e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
 
 g = 0,    m=7
-maximum = 5.551115123125783e-17 at 18 (i=4, L/R=1, beta=0)
-minimum = -3.469446951953614e-17 at 151 (i=37, L/R=1, beta=1)
+maximum = 1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
 
 g = 0,    m=8
-maximum = 5.551115123125783e-17 at 36 (i=9, L/R=0, beta=0)
-minimum = -2.7755575615628914e-17 at 49 (i=12, L/R=0, beta=1)
+maximum = 1.6653345369377348e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -8.326672684688674e-17 at 14 (i=3, L/R=1, beta=0)
 
 g = 0,    m=9
-maximum = 6.938893903907228e-17 at 68 (i=17, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 116 (i=29, L/R=0, beta=0)
+maximum = 3.885780586188048e-16 at 34 (i=8, L/R=1, beta=0)
+minimum = -3.608224830031759e-16 at 16 (i=4, L/R=0, beta=0)
 
 g = 0,    m=10
-maximum = 1.3877787807814457e-16 at 136 (i=34, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 132 (i=33, L/R=0, beta=0)
+maximum = 3.885780586188048e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -4.996003610813204e-16 at 38 (i=9, L/R=1, beta=0)
 
 g = 0,    m=11
-maximum = 1.8041124150158794e-16 at 178 (i=44, L/R=1, beta=0)
-minimum = -1.942890293094024e-16 at 112 (i=28, L/R=0, beta=0)
+maximum = 1.0547118733938987e-15 at 36 (i=9, L/R=0, beta=0)
+minimum = -4.440892098500626e-16 at 24 (i=6, L/R=0, beta=0)
 
 g = 0,    m=12
-maximum = 1.942890293094024e-16 at 128 (i=32, L/R=0, beta=0)
-minimum = -2.220446049250313e-16 at 141 (i=35, L/R=0, beta=1)
+maximum = 5.551115123125783e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -6.106226635438361e-16 at 24 (i=6, L/R=0, beta=0)
 
 g = 0,    m=13
-maximum = 2.220446049250313e-16 at 96 (i=24, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 132 (i=33, L/R=0, beta=0)
+maximum = 5.551115123125783e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -5.551115123125783e-16 at 36 (i=9, L/R=0, beta=0)
 
 g = 0,    m=14
-maximum = 2.220446049250313e-16 at 92 (i=23, L/R=0, beta=0)
-minimum = -2.498001805406602e-16 at 100 (i=25, L/R=0, beta=0)
+maximum = 3.3306690738754696e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 36 (i=9, L/R=0, beta=0)
 
 g = 0,    m=15
-maximum = 3.0531133177191805e-16 at 176 (i=44, L/R=0, beta=0)
-minimum = -2.983724378680108e-16 at 76 (i=19, L/R=0, beta=0)
+maximum = 6.661338147750939e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 36 (i=9, L/R=0, beta=0)
 
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -2.983724378680108e-16 at 162 (i=40, L/R=1, beta=0)
+g = 1,    m=0
+maximum = 5.565603533597141e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 4.42429426428248e-12 at 0 (i=0, L/R=0, beta=0)
 
-g = 0,    m=1
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
+g = 1,    m=1
+maximum = 5.387523760447266e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 4.282740828642773e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.0181699596767402e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.134566434221831e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 9.604462135603953e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.7171106778421947e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 8.695749599829661e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.1583243280952633e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 7.30377595181686e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.4502229597211933e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 5.204727097640749e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.5865309601903466e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 2.0793676280828066e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.663072880635056e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 2.0793676278052509e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.663072880635056e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 5.204727097640749e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.5865309602458577e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 7.303775951539304e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.4502229597767045e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 8.695749599829661e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.1583243281507745e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 9.604462135603953e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.717110677897706e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.0181699596767402e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.134566434305098e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 5.38749600487165e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 4.282713073067157e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=15
+maximum = 5.565603533597141e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 4.42429426428248e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 7.505052135314827e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 5.789924095722654e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=1
+maximum = 7.265021917390868e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 5.604711139639562e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.3650511117568875e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.503391501737731e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.287674163852337e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.947372874375411e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.1658589957330712e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.203217845555329e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 9.79254429822607e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.2604026894422766e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 6.978459086148803e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.110742858052461e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 2.7881001668506045e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -7.532448533242864e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 2.7881001668506045e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -7.532448533242864e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 6.978459085593691e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.110742858052461e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 9.792544299336292e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.2604026893867655e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.1658589957885823e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.203217845388796e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.2876741637968259e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.947372874375411e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.3650511117568875e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.50339150168222e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 7.264966406239637e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 5.604711139639562e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 7.50516315761729e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 5.7899518512982695e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.17468315261749e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.2166660708129484e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=1
+maximum = 7.913170119167034e-12 at 21 (i=5, L/R=0, beta=1)
+minimum = 6.017769615951352e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=2
+maximum = 1.482692863263857e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.957024007186007e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.3986503794027882e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.354991527151132e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.2663404316270999e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.549307303591821e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.0636583320233761e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.5286332611406124e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.580011944230414e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.284196180535325e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.0284704716221356e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.150527441297406e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.0284704705119125e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.150527441852518e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.580011944785525e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.284196180479814e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.0636583320233761e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.5286332611961235e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.2663404317936333e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.54930730353631e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.3986503795138105e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.3549915270956205e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.4826928633193681e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.957024007074985e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 7.913170119167034e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.017825127102583e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=15
+maximum = 8.174627641466259e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.2166660708129484e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=0
+maximum = 8.404332785261204e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.351752457334214e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=1
+maximum = 8.135492279848222e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.148553888252195e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.5224628289733921e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.107468618121725e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4361657607597778e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.490150784936976e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3003064717742596e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.664034764789715e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.092188005868966e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6175196438947843e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.783333336730536e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.341648583870093e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.1097099112420423e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.355127494308334e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1097099101318193e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.355127494308334e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.783333336730536e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.341648583925604e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.0921880058134548e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6175196438947843e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3003064717742596e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.6640347649007374e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4361657607597778e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.490150784936976e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5224628290289033e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.107468618121725e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.13538125754576e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.148609399403426e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.404277274109972e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.351807968485446e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.482659019648509e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.394995644143364e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=1
+maximum = 8.21132051243012e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.1904092962805635e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=2
+maximum = 1.5358755249827993e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.1573904685530145e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4488174205906645e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.534993671230115e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.311760302713516e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.702090758312849e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1018077031299534e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.646995557105015e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.851882327103432e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3606934030917515e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.137096480365642e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.42291664526762e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.137096480365642e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.422916644712508e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.851882327658544e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3606934030917515e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1018077031299534e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.646995557105015e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.311760302713516e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.70209075836836e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4488174205906645e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.534993671230115e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5358755249827993e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.1573904685530145e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.211209490127658e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.190437051856179e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=15
+maximum = 8.482659019648509e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.394995644143364e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.509248861088281e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.409012209829257e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=1
+maximum = 8.237077686601424e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.20395401718099e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=2
+maximum = 1.5403907039912568e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.173963290501128e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4530761376918555e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.549878510480166e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3156154668458875e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.7147205852193785e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1050451502181424e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6567755779537414e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.874948885211452e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3670104670747705e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.1463106753282233e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.4453928328454e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1463106753282233e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.445392832290288e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.874948886321675e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3670104670747705e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.105045150051609e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.656775578120275e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3156154667903763e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.71472058527489e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4530761377473667e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.549878510424655e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5403907038802345e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.17396329061215e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.237077686601424e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.203981772756606e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.509304372239512e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.4090399654048724e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.518297178738976e-12 at 21 (i=5, L/R=0, beta=1)
+minimum = 6.413536368654604e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=1
+maximum = 8.245903959647194e-12 at 21 (i=5, L/R=0, beta=1)
+minimum = 6.208367153703875e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.541908442204143e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.179467023692542e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4545075699423649e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.554821143560762e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3169111311439607e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.7189138042691425e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1061330695838478e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.66002199952975e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.882699049610586e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3691068414266603e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.149406068159166e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.452849243334448e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1494060676040547e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.45284924388956e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.882699049055475e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3691068414821714e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.106133069639359e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.660021999585261e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3169111309774273e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.718913804324654e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4545075698868537e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.554821143616273e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.541908442204143e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.179467023637031e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.245848448495963e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.208367153703875e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.518297178738976e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.413536368654604e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=0
+maximum = 8.521350292056695e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.415035169737848e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=1
+maximum = 8.24879053951122e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.209810443635888e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=2
+maximum = 1.5424180145329203e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.181295313711921e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4549881318104418e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.556462889855229e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.317346069562575e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720306449434997e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1064982231023812e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6611000167052765e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.88529993411835e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.369802819424116e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.150444679578257e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.455324002065723e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.150444679578257e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.455324001510611e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.885299934673462e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3698028193130938e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1064982231023812e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6611000167607877e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.317346069562575e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720306449323974e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.454988131865953e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.556462889799718e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5424180145329203e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.181295313767432e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.24879053951122e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.209810443635888e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.521350292056695e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.415035169737848e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.52246051508132e-12 at 21 (i=5, L/R=0, beta=1)
+minimum = 6.415507014523314e-12 at 39 (i=9, L/R=1, beta=1)
+
+g = 1,    m=1
+maximum = 8.249789740233382e-12 at 21 (i=5, L/R=0, beta=1)
+minimum = 6.210254532845738e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.54258893619863e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.181902801272177e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.455149311824222e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.5570083502543e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3174919332725743e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.7207690967998595e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.106620667712388e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.661458090775671e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886171937143693e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3700339523147207e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.1507928399676643e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.456145662583125e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.150792840522776e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.456145662028014e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.886171937143693e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3700339522592095e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066206677678991e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.661458090775671e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3174919332725743e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720769096855371e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4551493117687109e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.557008350309811e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5425889362541412e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.181902801272177e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.249789740233382e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210282288421354e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.522405003930089e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.415507014523314e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.522793581988708e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.415673547977008e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=1
+maximum = 8.25012280714077e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.210476577450663e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.5426462214307435e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.18210469222058e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4552033284487287e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.5571896145356625e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3175408125620791e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720922826273455e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1066616940058616e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.661577057612053e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886464067907717e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.370110731397812e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.150909457794171e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.456418549296352e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1509094583492825e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.45641854874124e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.886464068462828e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.370110731342301e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066616940058616e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.661577057556542e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.317540812506568e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720922826328966e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4552033285042398e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.5571896145356625e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5426462213752323e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.182104692165069e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.25012280714077e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.2104488218750475e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.522738070837477e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.415673547977008e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.52284909313994e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.415701303552623e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=1
+maximum = 8.250233829443232e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210476577450663e-12 at 39 (i=9, L/R=1, beta=1)
+
+g = 1,    m=2
+maximum = 1.5426654081385216e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.182171799429259e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4552214194218926e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.557249861676272e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3175571814127984e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720973917349269e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1066754315169902e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6616165909331144e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886561873560183e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.370136241824916e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.150948497676609e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.456509200116535e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1509484971214974e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.456509199561424e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.886561874115294e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.370136241824916e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066754315725014e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6616165908776033e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3175571814683096e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720973917238247e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4552214194218926e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.5572498617872945e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5426654081385216e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.18217179948477e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.250233829443232e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.2104488218750475e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=15
+maximum = 8.52284909313994e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.415701303552623e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=0
+maximum = 8.52290460429117e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.415756814703855e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=1
+maximum = 8.250289340594463e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210504333026279e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.5426718308342302e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.182194108750316e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4552274749113359e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.557269889211458e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3175626601413803e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720990899764743e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1066800290060463e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6616297303115886e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886594601269614e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.370144719487932e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.150961557785159e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.456539320467193e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.1509615583402706e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.456539319912082e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.886594601824726e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.370144719432421e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066800290615575e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6616297303115886e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3175626600858692e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720990899764743e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4552274749113359e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.557269889266969e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.542671830778719e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.182194108750316e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.250233829443232e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210476577450663e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=15
+maximum = 8.52290460429117e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.415756814703855e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=0
+maximum = 8.522960115442402e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.415729059128239e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=1
+maximum = 8.250233829443232e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210504333026279e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=2
+maximum = 1.5426739798374278e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.182201526094833e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4552295009018223e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.557276547718537e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3175644930085717e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720996545415357e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.1066815669424912e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6616340980399897e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886605548623749e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3701475371229463e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.150965926512761e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.45654932912776e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.150965926512761e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.45654932912776e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.88660554917886e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.370147537067435e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066815669980024e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6616340979289674e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3175644928975494e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720996545526379e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4552295009573335e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.557276547663026e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5426739797264055e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.182201526094833e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.250289340594463e-12 at 20 (i=5, L/R=0, beta=0)
+minimum = 6.210504333026279e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=15
+maximum = 8.52290460429117e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.41578457027947e-12 at 38 (i=9, L/R=1, beta=0)
+
+g = 1,    m=0
+maximum = 8.522960115442402e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.415756814703855e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 1,    m=1
+maximum = 8.250400362896926e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210504333026279e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=2
+maximum = 1.5426746984292805e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -6.182203992621815e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=3
+maximum = 1.4552301784154231e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.557278761725293e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=4
+maximum = 1.3175651058516813e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -4.720998422524936e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=5
+maximum = 1.106682081142285e-06 at 20 (i=5, L/R=0, beta=0)
+minimum = -3.6616355499896613e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=6
+maximum = 7.886609208473949e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.3701484739291345e-06 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=7
+maximum = 3.15096738701115e-07 at 20 (i=5, L/R=0, beta=0)
+minimum = -8.456552655355942e-07 at 23 (i=5, L/R=1, beta=1)
+
+g = 1,    m=8
+maximum = 3.150967385900927e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -8.456552655355942e-07 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=9
+maximum = 7.886609207918838e-07 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.3701484738736234e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=10
+maximum = 1.1066820812533074e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.6616355499896613e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=11
+maximum = 1.3175651059071924e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -4.720998422524936e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=12
+maximum = 1.4552301784154231e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.557278761669782e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=13
+maximum = 1.5426746983737694e-06 at 18 (i=4, L/R=1, beta=0)
+minimum = -6.1822039926773265e-06 at 17 (i=4, L/R=0, beta=1)
+
+g = 1,    m=14
+maximum = 8.250233829443232e-12 at 18 (i=4, L/R=1, beta=0)
+minimum = 6.210504333026279e-12 at 1 (i=0, L/R=0, beta=1)
+
+g = 1,    m=15
+maximum = 8.52290460429117e-12 at 19 (i=4, L/R=1, beta=1)
+minimum = 6.41578457027947e-12 at 0 (i=0, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 1.1102230246251565e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=1
+maximum = 1.3877787807814457e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=2
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+minimum = -1.3877787807814457e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 15 (i=3, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -1.3877787807814457e-16 at 15 (i=3, L/R=1, beta=1)
+
+g = 2,    m=5
+maximum = 5.551115123125783e-17 at 26 (i=6, L/R=1, beta=0)
+minimum = -1.3877787807814457e-16 at 30 (i=7, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 2.7755575615628914e-17 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 0.0 at 0 (i=0, L/R=0, beta=0)
+minimum = -8.326672684688674e-17 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 0.0 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 2.7755575615628914e-17 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 37 (i=9, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 5.551115123125783e-17 at 25 (i=6, L/R=0, beta=1)
+minimum = -1.3877787807814457e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -1.3877787807814457e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 5.551115123125783e-17 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.3877787807814457e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 8.326672684688674e-17 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.3877787807814457e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=15
+maximum = 1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -3.885780586188048e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 2.7755575615628914e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 1.1102230246251565e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 0.0 at 6 (i=1, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=8
+maximum = 0.0 at 4 (i=1, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -1.942890293094024e-16 at 36 (i=9, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 3.885780586188048e-16 at 23 (i=5, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 3.885780586188048e-16 at 26 (i=6, L/R=1, beta=0)
 minimum = -3.0531133177191805e-16 at 2 (i=0, L/R=1, beta=0)
 
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 4 (i=1, L/R=0, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.3877787807814457e-16 at 22 (i=5, L/R=1, beta=0)
-minimum = -2.1510571102112408e-16 at 71 (i=17, L/R=1, beta=1)
-
-g = 0,    m=5
-maximum = 8.326672684688674e-17 at 24 (i=6, L/R=0, beta=0)
-minimum = -1.942890293094024e-16 at 34 (i=8, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 25 (i=6, L/R=0, beta=1)
-
-g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
-minimum = -4.85722573273506e-17 at 70 (i=17, L/R=1, beta=0)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 60 (i=15, L/R=0, beta=0)
-minimum = -5.551115123125783e-17 at 157 (i=39, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 8.326672684688674e-17 at 97 (i=24, L/R=0, beta=1)
-minimum = -1.3183898417423734e-16 at 128 (i=32, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.249000902703301e-16 at 169 (i=42, L/R=0, beta=1)
-minimum = -1.6653345369377348e-16 at 132 (i=33, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.734723475976807e-16 at 181 (i=45, L/R=0, beta=1)
-minimum = -1.942890293094024e-16 at 42 (i=10, L/R=1, beta=0)
-
-g = 0,    m=12
-maximum = 1.942890293094024e-16 at 57 (i=14, L/R=0, beta=1)
-minimum = -2.498001805406602e-16 at 154 (i=38, L/R=1, beta=0)
-
-g = 0,    m=13
-maximum = 2.7755575615628914e-16 at 192 (i=48, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 169 (i=42, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 2.220446049250313e-16 at 42 (i=10, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 41 (i=10, L/R=0, beta=1)
-
-g = 0,    m=15
-maximum = 2.7755575615628914e-16 at 153 (i=38, L/R=0, beta=1)
-minimum = -3.2612801348363973e-16 at 77 (i=19, L/R=0, beta=1)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 22 (i=5, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 19 (i=4, L/R=1, beta=1)
-
-g = 0,    m=1
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 27 (i=6, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 18 (i=4, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.3592239273284576e-16 at 50 (i=12, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.3877787807814457e-16 at 132 (i=33, L/R=0, beta=0)
-minimum = -2.636779683484747e-16 at 58 (i=14, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.1102230246251565e-16 at 42 (i=10, L/R=1, beta=0)
-minimum = -2.220446049250313e-16 at 30 (i=7, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 5.551115123125783e-17 at 103 (i=25, L/R=1, beta=1)
-minimum = -1.5265566588595902e-16 at 11 (i=2, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
-minimum = -5.551115123125783e-17 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 8 (i=2, L/R=0, beta=0)
-minimum = -5.551115123125783e-17 at 129 (i=32, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 5.551115123125783e-17 at 73 (i=18, L/R=0, beta=1)
-minimum = -1.249000902703301e-16 at 53 (i=13, L/R=0, beta=1)
-
-g = 0,    m=10
-maximum = 1.249000902703301e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -1.3877787807814457e-16 at 44 (i=11, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.3877787807814457e-16 at 60 (i=15, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 56 (i=14, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 1.8041124150158794e-16 at 112 (i=28, L/R=0, beta=0)
-minimum = -2.498001805406602e-16 at 82 (i=20, L/R=1, beta=0)
-
-g = 0,    m=13
-maximum = 1.6653345369377348e-16 at 67 (i=16, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 129 (i=32, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.0531133177191805e-16 at 144 (i=36, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 3.3306690738754696e-16 at 185 (i=46, L/R=0, beta=1)
-minimum = -3.885780586188048e-16 at 144 (i=36, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 2.7755575615628914e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -5.551115123125783e-16 at 39 (i=9, L/R=1, beta=1)
-
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -2.914335439641036e-16 at 58 (i=14, L/R=1, beta=0)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 6 (i=1, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 15 (i=3, L/R=1, beta=1)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.8041124150158794e-16 at 34 (i=8, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 19 (i=4, L/R=1, beta=1)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -1.5959455978986625e-16 at 70 (i=17, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 5.551115123125783e-17 at 53 (i=13, L/R=0, beta=1)
-minimum = -1.1102230246251565e-16 at 55 (i=13, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 4.163336342344337e-17 at 34 (i=8, L/R=1, beta=0)
-minimum = -6.938893903907228e-17 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 2.7755575615628914e-17 at 41 (i=10, L/R=0, beta=1)
-minimum = -5.551115123125783e-17 at 16 (i=4, L/R=0, beta=0)
-
-g = 0,    m=9
-maximum = 9.020562075079397e-17 at 185 (i=46, L/R=0, beta=1)
-minimum = -1.0408340855860843e-16 at 60 (i=15, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.6653345369377348e-16 at 57 (i=14, L/R=0, beta=1)
-minimum = -1.3877787807814457e-16 at 103 (i=25, L/R=1, beta=1)
-
-g = 0,    m=11
-maximum = 1.8735013540549517e-16 at 182 (i=45, L/R=1, beta=0)
-minimum = -1.942890293094024e-16 at 150 (i=37, L/R=1, beta=0)
-
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 115 (i=28, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 52 (i=13, L/R=0, beta=0)
-
-g = 0,    m=13
-maximum = 2.0122792321330962e-16 at 183 (i=45, L/R=1, beta=1)
-minimum = -3.0531133177191805e-16 at 45 (i=11, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 2.0816681711721685e-16 at 40 (i=10, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 36 (i=9, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 2.7755575615628914e-16 at 165 (i=41, L/R=0, beta=1)
-minimum = -3.885780586188048e-16 at 196 (i=49, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.608224830031759e-16 at 38 (i=9, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
-minimum = -3.3306690738754696e-16 at 7 (i=1, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -3.608224830031759e-16 at 38 (i=9, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 1.6653345369377348e-16 at 54 (i=13, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 27 (i=6, L/R=1, beta=1)
-
-g = 0,    m=4
-maximum = 1.3877787807814457e-16 at 132 (i=33, L/R=0, beta=0)
-minimum = -2.220446049250313e-16 at 30 (i=7, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
-
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.249000902703301e-16 at 10 (i=2, L/R=1, beta=0)
-
-g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
-minimum = -5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 12 (i=3, L/R=0, beta=0)
-minimum = -4.163336342344337e-17 at 81 (i=20, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 9.020562075079397e-17 at 130 (i=32, L/R=1, beta=0)
-minimum = -1.3183898417423734e-16 at 88 (i=22, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.3183898417423734e-16 at 76 (i=19, L/R=0, beta=0)
-minimum = -1.457167719820518e-16 at 188 (i=47, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.734723475976807e-16 at 161 (i=40, L/R=0, beta=1)
-minimum = -1.942890293094024e-16 at 108 (i=27, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 1.942890293094024e-16 at 168 (i=42, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 109 (i=27, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.2898349882893854e-16 at 160 (i=40, L/R=0, beta=0)
-minimum = -2.498001805406602e-16 at 128 (i=32, L/R=0, beta=0)
-
-g = 0,    m=14
-maximum = 2.220446049250313e-16 at 89 (i=22, L/R=0, beta=1)
-minimum = -3.0531133177191805e-16 at 56 (i=14, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 3.3306690738754696e-16 at 177 (i=44, L/R=0, beta=1)
-minimum = -3.8163916471489756e-16 at 188 (i=47, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -4.579669976578771e-16 at 26 (i=6, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 28 (i=7, L/R=0, beta=0)
-minimum = -4.579669976578771e-16 at 3 (i=0, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 23 (i=5, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 1.8041124150158794e-16 at 56 (i=14, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 38 (i=9, L/R=1, beta=0)
-
-g = 0,    m=4
-maximum = 1.6653345369377348e-16 at 142 (i=35, L/R=1, beta=0)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -2.3592239273284576e-16 at 26 (i=6, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 7 (i=1, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 4.163336342344337e-17 at 122 (i=30, L/R=1, beta=0)
-minimum = -6.938893903907228e-17 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 2.7755575615628914e-17 at 12 (i=3, L/R=0, beta=0)
-minimum = -4.163336342344337e-17 at 28 (i=7, L/R=0, beta=0)
-
-g = 0,    m=9
-maximum = 9.71445146547012e-17 at 197 (i=49, L/R=0, beta=1)
-minimum = -1.457167719820518e-16 at 136 (i=34, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.3877787807814457e-16 at 104 (i=26, L/R=0, beta=0)
-minimum = -2.3592239273284576e-16 at 132 (i=33, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.3877787807814457e-16 at 141 (i=35, L/R=0, beta=1)
-minimum = -2.914335439641036e-16 at 124 (i=31, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 88 (i=22, L/R=0, beta=0)
-minimum = -3.3306690738754696e-16 at 153 (i=38, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.2898349882893854e-16 at 69 (i=17, L/R=0, beta=1)
-minimum = -3.3306690738754696e-16 at 185 (i=46, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 3.0531133177191805e-16 at 142 (i=35, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 67 (i=16, L/R=1, beta=1)
-
-g = 0,    m=15
-maximum = 3.0531133177191805e-16 at 164 (i=41, L/R=0, beta=0)
-minimum = -3.885780586188048e-16 at 44 (i=11, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.191891195797325e-16 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=1
-maximum = 2.220446049250313e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.7470027081099033e-16 at 3 (i=0, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.6653345369377348e-16 at 142 (i=35, L/R=1, beta=0)
-minimum = -2.498001805406602e-16 at 10 (i=2, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 6.938893903907228e-17 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 35 (i=8, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 6.938893903907228e-17 at 54 (i=13, L/R=1, beta=0)
-minimum = -6.938893903907228e-17 at 27 (i=6, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 16 (i=4, L/R=0, beta=0)
-minimum = -2.7755575615628914e-17 at 24 (i=6, L/R=0, beta=0)
-
-g = 0,    m=9
-maximum = 6.938893903907228e-17 at 67 (i=16, L/R=1, beta=1)
-minimum = -1.457167719820518e-16 at 152 (i=38, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.6653345369377348e-16 at 112 (i=28, L/R=0, beta=0)
-minimum = -1.8041124150158794e-16 at 132 (i=33, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.3877787807814457e-16 at 21 (i=5, L/R=0, beta=1)
-minimum = -2.0816681711721685e-16 at 176 (i=44, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 1.942890293094024e-16 at 135 (i=33, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 149 (i=37, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.191891195797325e-16 at 53 (i=13, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 2.8449465006019636e-16 at 161 (i=40, L/R=0, beta=1)
-minimum = -3.3306690738754696e-16 at 80 (i=20, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 2.220446049250313e-16 at 125 (i=31, L/R=0, beta=1)
-minimum = -3.2612801348363973e-16 at 76 (i=19, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.7470027081099033e-16 at 50 (i=12, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.608224830031759e-16 at 27 (i=6, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 2 (i=0, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.6653345369377348e-16 at 48 (i=12, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 39 (i=9, L/R=1, beta=1)
-
-g = 0,    m=5
-maximum = 1.249000902703301e-16 at 41 (i=10, L/R=0, beta=1)
-minimum = -1.8735013540549517e-16 at 70 (i=17, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
-
-g = 0,    m=7
-maximum = 4.163336342344337e-17 at 122 (i=30, L/R=1, beta=0)
-minimum = -5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 164 (i=41, L/R=0, beta=0)
-minimum = -5.551115123125783e-17 at 112 (i=28, L/R=0, beta=0)
-
-g = 0,    m=9
-maximum = 8.326672684688674e-17 at 105 (i=26, L/R=0, beta=1)
-minimum = -1.3183898417423734e-16 at 124 (i=31, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.8041124150158794e-16 at 112 (i=28, L/R=0, beta=0)
-minimum = -1.6653345369377348e-16 at 52 (i=13, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.734723475976807e-16 at 161 (i=40, L/R=0, beta=1)
-minimum = -1.8041124150158794e-16 at 88 (i=22, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 2.498001805406602e-16 at 176 (i=44, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 93 (i=23, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.220446049250313e-16 at 33 (i=8, L/R=0, beta=1)
-minimum = -2.498001805406602e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=14
-maximum = 2.498001805406602e-16 at 54 (i=13, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 53 (i=13, L/R=0, beta=1)
-
-g = 0,    m=15
-maximum = 3.885780586188048e-16 at 112 (i=28, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 64 (i=16, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.0531133177191805e-16 at 47 (i=11, L/R=1, beta=1)
-minimum = -3.3306690738754696e-16 at 15 (i=3, L/R=1, beta=1)
-
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 16 (i=4, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 38 (i=9, L/R=1, beta=0)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 2.498001805406602e-16 at 3 (i=0, L/R=1, beta=1)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -2.220446049250313e-16 at 46 (i=11, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 8.326672684688674e-17 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.249000902703301e-16 at 11 (i=2, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
+g = 2,    m=3
+maximum = 2.7755575615628914e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 2.7755575615628914e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
 minimum = -5.551115123125783e-17 at 6 (i=1, L/R=1, beta=0)
 
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 33 (i=8, L/R=0, beta=1)
-minimum = -4.163336342344337e-17 at 28 (i=7, L/R=0, beta=0)
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 8 (i=2, L/R=0, beta=0)
+minimum = -5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
 
-g = 0,    m=9
-maximum = 9.020562075079397e-17 at 145 (i=36, L/R=0, beta=1)
-minimum = -1.249000902703301e-16 at 40 (i=10, L/R=0, beta=0)
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
 
-g = 0,    m=10
-maximum = 1.942890293094024e-16 at 136 (i=34, L/R=0, beta=0)
-minimum = -1.8041124150158794e-16 at 176 (i=44, L/R=0, beta=0)
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 34 (i=8, L/R=1, beta=0)
 
-g = 0,    m=11
-maximum = 1.6653345369377348e-16 at 39 (i=9, L/R=1, beta=1)
-minimum = -1.942890293094024e-16 at 124 (i=31, L/R=0, beta=0)
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 12 (i=3, L/R=0, beta=0)
 
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 147 (i=36, L/R=1, beta=1)
-minimum = -3.0531133177191805e-16 at 122 (i=30, L/R=1, beta=0)
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
 
-g = 0,    m=13
-maximum = 2.7755575615628914e-16 at 156 (i=39, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 97 (i=24, L/R=0, beta=1)
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 8 (i=2, L/R=0, beta=0)
 
-g = 0,    m=14
-maximum = 2.8449465006019636e-16 at 173 (i=43, L/R=0, beta=1)
-minimum = -3.191891195797325e-16 at 59 (i=14, L/R=1, beta=1)
+g = 2,    m=14
+maximum = 2.7755575615628914e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 34 (i=8, L/R=1, beta=0)
 
-g = 0,    m=15
-maximum = 3.885780586188048e-16 at 121 (i=30, L/R=0, beta=1)
-minimum = -3.0531133177191805e-16 at 100 (i=25, L/R=0, beta=0)
+g = 2,    m=15
+maximum = 3.3306690738754696e-16 at 32 (i=8, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
 
-g = 0,    m=0
-maximum = 2.7755575615628914e-16 at 38 (i=9, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 22 (i=5, L/R=1, beta=0)
+g = 2,    m=0
+maximum = 3.3306690738754696e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
 
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.3306690738754696e-16 at 22 (i=5, L/R=1, beta=0)
+g = 2,    m=1
+maximum = 3.0531133177191805e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
 
-g = 0,    m=2
-maximum = 2.0816681711721685e-16 at 8 (i=2, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 74 (i=18, L/R=1, beta=0)
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -2.498001805406602e-16 at 2 (i=0, L/R=1, beta=0)
 
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 43 (i=10, L/R=1, beta=1)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
+g = 2,    m=3
+maximum = 2.220446049250313e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 10 (i=2, L/R=1, beta=0)
 
-g = 0,    m=4
-maximum = 1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -2.7755575615628914e-16 at 10 (i=2, L/R=1, beta=0)
 
-g = 0,    m=5
-maximum = 1.1102230246251565e-16 at 34 (i=8, L/R=1, beta=0)
-minimum = -1.457167719820518e-16 at 174 (i=43, L/R=1, beta=0)
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
 
-g = 0,    m=6
-maximum = 8.326672684688674e-17 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 166 (i=41, L/R=1, beta=0)
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 31 (i=7, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
 
-g = 0,    m=7
-maximum = 5.551115123125783e-17 at 23 (i=5, L/R=1, beta=1)
-minimum = -3.469446951953614e-17 at 151 (i=37, L/R=1, beta=1)
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 27 (i=6, L/R=1, beta=1)
 
-g = 0,    m=8
-maximum = 4.85722573273506e-17 at 89 (i=22, L/R=0, beta=1)
-minimum = -4.163336342344337e-17 at 36 (i=9, L/R=0, beta=0)
+g = 2,    m=8
+maximum = 0.0 at 5 (i=1, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 28 (i=7, L/R=0, beta=0)
 
-g = 0,    m=9
-maximum = 7.632783294297951e-17 at 143 (i=35, L/R=1, beta=1)
-minimum = -1.1102230246251565e-16 at 112 (i=28, L/R=0, beta=0)
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
 
-g = 0,    m=10
-maximum = 1.6653345369377348e-16 at 128 (i=32, L/R=0, beta=0)
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
 minimum = -1.6653345369377348e-16 at 28 (i=7, L/R=0, beta=0)
 
-g = 0,    m=11
-maximum = 1.942890293094024e-16 at 40 (i=10, L/R=0, beta=0)
-minimum = -2.0816681711721685e-16 at 54 (i=13, L/R=1, beta=0)
-
-g = 0,    m=12
-maximum = 2.2898349882893854e-16 at 180 (i=45, L/R=0, beta=0)
-minimum = -3.3306690738754696e-16 at 129 (i=32, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 92 (i=23, L/R=0, beta=0)
-
-g = 0,    m=14
-maximum = 2.8449465006019636e-16 at 77 (i=19, L/R=0, beta=1)
-minimum = -2.220446049250313e-16 at 140 (i=35, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 2.220446049250313e-16 at 100 (i=25, L/R=0, beta=0)
-minimum = -3.3306690738754696e-16 at 112 (i=28, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -4.3021142204224816e-16 at 30 (i=7, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -4.3021142204224816e-16 at 31 (i=7, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 1.6653345369377348e-16 at 105 (i=26, L/R=0, beta=1)
-minimum = -2.7755575615628914e-16 at 42 (i=10, L/R=1, beta=0)
-
-g = 0,    m=4
-maximum = 1.942890293094024e-16 at 18 (i=4, L/R=1, beta=0)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
-
-g = 0,    m=5
+g = 2,    m=11
 maximum = 1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
-minimum = -1.8735013540549517e-16 at 70 (i=17, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
 
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.8041124150158794e-16 at 11 (i=2, L/R=1, beta=1)
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 21 (i=5, L/R=0, beta=1)
 
-g = 0,    m=7
-maximum = 4.85722573273506e-17 at 183 (i=45, L/R=1, beta=1)
-minimum = -4.85722573273506e-17 at 70 (i=17, L/R=1, beta=0)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 164 (i=41, L/R=0, beta=0)
-minimum = -6.938893903907228e-17 at 13 (i=3, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 7.632783294297951e-17 at 122 (i=30, L/R=1, beta=0)
-minimum = -1.3877787807814457e-16 at 45 (i=11, L/R=0, beta=1)
-
-g = 0,    m=10
-maximum = 1.249000902703301e-16 at 197 (i=49, L/R=0, beta=1)
-minimum = -1.6653345369377348e-16 at 40 (i=10, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.8041124150158794e-16 at 52 (i=13, L/R=0, beta=0)
-minimum = -1.942890293094024e-16 at 89 (i=22, L/R=0, beta=1)
-
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 143 (i=35, L/R=1, beta=1)
-minimum = -2.7755575615628914e-16 at 85 (i=21, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.0122792321330962e-16 at 181 (i=45, L/R=0, beta=1)
-minimum = -2.7755575615628914e-16 at 117 (i=29, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 2.220446049250313e-16 at 114 (i=28, L/R=1, beta=0)
-minimum = -3.0531133177191805e-16 at 116 (i=29, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 3.3306690738754696e-16 at 184 (i=46, L/R=0, beta=0)
-minimum = -4.163336342344337e-16 at 168 (i=42, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -2.983724378680108e-16 at 162 (i=40, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.608224830031759e-16 at 49 (i=12, L/R=0, beta=1)
-
-g = 0,    m=2
-maximum = 2.220446049250313e-16 at 30 (i=7, L/R=1, beta=0)
-minimum = -3.0531133177191805e-16 at 2 (i=0, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.498001805406602e-16 at 29 (i=7, L/R=0, beta=1)
-minimum = -3.3306690738754696e-16 at 31 (i=7, L/R=1, beta=1)
-
-g = 0,    m=4
-maximum = 1.8041124150158794e-16 at 48 (i=12, L/R=0, beta=0)
-minimum = -2.498001805406602e-16 at 39 (i=9, L/R=1, beta=1)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 50 (i=12, L/R=1, beta=0)
-minimum = -1.6653345369377348e-16 at 35 (i=8, L/R=1, beta=1)
-
-g = 0,    m=6
-maximum = 8.326672684688674e-17 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.1102230246251565e-16 at 23 (i=5, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 5.551115123125783e-17 at 23 (i=5, L/R=1, beta=1)
-minimum = -4.85722573273506e-17 at 70 (i=17, L/R=1, beta=0)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 21 (i=5, L/R=0, beta=1)
-minimum = -3.469446951953614e-17 at 68 (i=17, L/R=0, beta=0)
-
-g = 0,    m=9
-maximum = 7.632783294297951e-17 at 66 (i=16, L/R=1, beta=0)
-minimum = -1.249000902703301e-16 at 112 (i=28, L/R=0, beta=0)
-
-g = 0,    m=10
-maximum = 1.5265566588595902e-16 at 116 (i=29, L/R=0, beta=0)
-minimum = -1.8041124150158794e-16 at 124 (i=31, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.3877787807814457e-16 at 97 (i=24, L/R=0, beta=1)
-minimum = -2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
-
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -2.7755575615628914e-16 at 65 (i=16, L/R=0, beta=1)
-
-g = 0,    m=13
-maximum = 2.0122792321330962e-16 at 71 (i=17, L/R=1, beta=1)
-minimum = -3.0531133177191805e-16 at 73 (i=18, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 2.220446049250313e-16 at 118 (i=29, L/R=1, beta=0)
-minimum = -3.469446951953614e-16 at 40 (i=10, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 3.0531133177191805e-16 at 64 (i=16, L/R=0, beta=0)
-minimum = -4.649058915617843e-16 at 188 (i=47, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.608224830031759e-16 at 48 (i=12, L/R=0, beta=0)
-
-g = 0,    m=1
-maximum = 2.7755575615628914e-16 at 54 (i=13, L/R=1, beta=0)
-minimum = -3.0531133177191805e-16 at 10 (i=2, L/R=1, beta=0)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 66 (i=16, L/R=1, beta=0)
-minimum = -2.7755575615628914e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.6653345369377348e-16 at 31 (i=7, L/R=1, beta=1)
-minimum = -2.498001805406602e-16 at 106 (i=26, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -1.8041124150158794e-16 at 35 (i=8, L/R=1, beta=1)
-
-g = 0,    m=6
-maximum = 6.938893903907228e-17 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 5 (i=1, L/R=0, beta=1)
-
-g = 0,    m=7
-maximum = 6.938893903907228e-17 at 2 (i=0, L/R=1, beta=0)
-minimum = -5.551115123125783e-17 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 21 (i=5, L/R=0, beta=1)
-minimum = -3.469446951953614e-17 at 69 (i=17, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 1.1102230246251565e-16 at 29 (i=7, L/R=0, beta=1)
-minimum = -1.1102230246251565e-16 at 49 (i=12, L/R=0, beta=1)
-
-g = 0,    m=10
-maximum = 1.6653345369377348e-16 at 112 (i=28, L/R=0, beta=0)
-minimum = -1.5265566588595902e-16 at 184 (i=46, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 2.220446049250313e-16 at 185 (i=46, L/R=0, beta=1)
-minimum = -2.220446049250313e-16 at 120 (i=30, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 2.220446049250313e-16 at 49 (i=12, L/R=0, beta=1)
-minimum = -2.220446049250313e-16 at 114 (i=28, L/R=1, beta=0)
-
-g = 0,    m=13
-maximum = 3.0531133177191805e-16 at 116 (i=29, L/R=0, beta=0)
-minimum = -4.163336342344337e-16 at 128 (i=32, L/R=0, beta=0)
-
-g = 0,    m=14
-maximum = 2.498001805406602e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -3.885780586188048e-16 at 96 (i=24, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 2.7755575615628914e-16 at 136 (i=34, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 48 (i=12, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 55 (i=13, L/R=1, beta=1)
-minimum = -4.0245584642661925e-16 at 51 (i=12, L/R=1, beta=1)
-
-g = 0,    m=1
-maximum = 2.220446049250313e-16 at 39 (i=9, L/R=1, beta=1)
-minimum = -3.885780586188048e-16 at 7 (i=1, L/R=1, beta=1)
-
-g = 0,    m=2
-maximum = 1.734723475976807e-16 at 77 (i=19, L/R=0, beta=1)
-minimum = -2.914335439641036e-16 at 26 (i=6, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.7755575615628914e-16 at 3 (i=0, L/R=1, beta=1)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
-maximum = 1.3877787807814457e-16 at 48 (i=12, L/R=0, beta=0)
-minimum = -2.220446049250313e-16 at 46 (i=11, L/R=1, beta=0)
-
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 86 (i=21, L/R=1, beta=0)
-minimum = -2.220446049250313e-16 at 22 (i=5, L/R=1, beta=0)
-
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 11 (i=2, L/R=1, beta=1)
-
-g = 0,    m=7
-maximum = 5.551115123125783e-17 at 23 (i=5, L/R=1, beta=1)
-minimum = -5.551115123125783e-17 at 59 (i=14, L/R=1, beta=1)
-
-g = 0,    m=8
-maximum = 4.163336342344337e-17 at 100 (i=25, L/R=0, beta=0)
-minimum = -4.163336342344337e-17 at 105 (i=26, L/R=0, beta=1)
-
-g = 0,    m=9
-maximum = 9.020562075079397e-17 at 157 (i=39, L/R=0, beta=1)
-minimum = -1.249000902703301e-16 at 53 (i=13, L/R=0, beta=1)
-
-g = 0,    m=10
-maximum = 1.3877787807814457e-16 at 64 (i=16, L/R=0, beta=0)
-minimum = -1.8041124150158794e-16 at 168 (i=42, L/R=0, beta=0)
-
-g = 0,    m=11
-maximum = 1.734723475976807e-16 at 181 (i=45, L/R=0, beta=1)
-minimum = -2.220446049250313e-16 at 44 (i=11, L/R=0, beta=0)
-
-g = 0,    m=12
-maximum = 2.0122792321330962e-16 at 190 (i=47, L/R=1, beta=0)
-minimum = -3.608224830031759e-16 at 124 (i=31, L/R=0, beta=0)
-
-g = 0,    m=13
-maximum = 1.942890293094024e-16 at 60 (i=15, L/R=0, beta=0)
-minimum = -3.0531133177191805e-16 at 157 (i=39, L/R=0, beta=1)
-
-g = 0,    m=14
-maximum = 3.0531133177191805e-16 at 54 (i=13, L/R=1, beta=0)
-minimum = -3.3306690738754696e-16 at 80 (i=20, L/R=0, beta=0)
-
-g = 0,    m=15
-maximum = 2.7755575615628914e-16 at 177 (i=44, L/R=0, beta=1)
-minimum = -2.498001805406602e-16 at 108 (i=27, L/R=0, beta=0)
-
-g = 0,    m=0
-maximum = 3.3306690738754696e-16 at 62 (i=15, L/R=1, beta=0)
-minimum = -3.0531133177191805e-16 at 14 (i=3, L/R=1, beta=0)
-
-g = 0,    m=1
-maximum = 2.498001805406602e-16 at 72 (i=18, L/R=0, beta=0)
-minimum = -3.7470027081099033e-16 at 26 (i=6, L/R=1, beta=0)
-
-g = 0,    m=2
-maximum = 2.7755575615628914e-16 at 3 (i=0, L/R=1, beta=1)
-minimum = -2.636779683484747e-16 at 50 (i=12, L/R=1, beta=0)
-
-g = 0,    m=3
-maximum = 2.220446049250313e-16 at 82 (i=20, L/R=1, beta=0)
-minimum = -2.914335439641036e-16 at 84 (i=21, L/R=0, beta=0)
-
-g = 0,    m=4
+g = 2,    m=13
 maximum = 1.3877787807814457e-16 at 37 (i=9, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=14
+maximum = 1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=15
+maximum = 1.1102230246251565e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -2.498001805406602e-16 at 36 (i=9, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 2.7755575615628914e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -4.440892098500626e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 3.885780586188048e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 27 (i=6, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -4.440892098500626e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 2.498001805406602e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=6
+maximum = 5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=9
+maximum = 5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 22 (i=5, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -2.7755575615628914e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 34 (i=8, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -3.3306690738754696e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=1
+maximum = 1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 19 (i=4, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=3
+maximum = 1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -3.885780586188048e-16 at 23 (i=5, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 23 (i=5, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=6
+maximum = 1.6653345369377348e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+minimum = -5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
+
+g = 2,    m=9
+maximum = 1.6653345369377348e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 28 (i=7, L/R=0, beta=0)
+minimum = -3.3306690738754696e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 36 (i=9, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 32 (i=8, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 1.6653345369377348e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 30 (i=7, L/R=1, beta=0)
+
+g = 2,    m=0
+maximum = 3.3306690738754696e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -4.440892098500626e-16 at 23 (i=5, L/R=1, beta=1)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 11 (i=2, L/R=1, beta=1)
+
+g = 2,    m=3
+maximum = 2.7755575615628914e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=6
+maximum = 1.6653345369377348e-16 at 31 (i=7, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+minimum = -5.551115123125783e-17 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.6653345369377348e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 3.3306690738754696e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -2.7755575615628914e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 3.3306690738754696e-16 at 32 (i=8, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 3.885780586188048e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 27 (i=6, L/R=1, beta=1)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 2.7755575615628914e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -2.7755575615628914e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=6
+maximum = 1.6653345369377348e-16 at 30 (i=7, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 0.0 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 0.0 at 4 (i=1, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 2.220446049250313e-16 at 30 (i=7, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 4.996003610813204e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -3.3306690738754696e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -4.440892098500626e-16 at 19 (i=4, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 15 (i=3, L/R=1, beta=1)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 10 (i=2, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+
+g = 2,    m=11
+maximum = 2.7755575615628914e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 1.3877787807814457e-16 at 39 (i=9, L/R=1, beta=1)
+minimum = -4.440892098500626e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 3.3306690738754696e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=1
+maximum = 4.440892098500626e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
 minimum = -2.7755575615628914e-16 at 2 (i=0, L/R=1, beta=0)
 
-g = 0,    m=5
-maximum = 1.6653345369377348e-16 at 43 (i=10, L/R=1, beta=1)
-minimum = -1.5959455978986625e-16 at 70 (i=17, L/R=1, beta=0)
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 6 (i=1, L/R=1, beta=0)
 
-g = 0,    m=6
-maximum = 1.0408340855860843e-16 at 152 (i=38, L/R=0, beta=0)
-minimum = -1.3877787807814457e-16 at 11 (i=2, L/R=1, beta=1)
+g = 2,    m=4
+maximum = 1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -2.7755575615628914e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.6653345369377348e-16 at 31 (i=7, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+minimum = -5.551115123125783e-17 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -4.440892098500626e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=15
+maximum = 2.7755575615628914e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 4.440892098500626e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -4.440892098500626e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 23 (i=5, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 2 (i=0, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = 0.0 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=9
+maximum = 1.6653345369377348e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=1
+maximum = 4.440892098500626e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=3
+maximum = 2.220446049250313e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -4.440892098500626e-16 at 15 (i=3, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.6653345369377348e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=7
+maximum = 1.1102230246251565e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 2.220446049250313e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -2.7755575615628914e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 37 (i=9, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 3.885780586188048e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 2.220446049250313e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -3.885780586188048e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 3.3306690738754696e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 1.1102230246251565e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
+
+g = 2,    m=8
+maximum = 2.7755575615628914e-17 at 38 (i=9, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 32 (i=8, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=12
+maximum = 3.3306690738754696e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 36 (i=9, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 34 (i=8, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.7755575615628914e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
+
+g = 2,    m=0
+maximum = 2.220446049250313e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 9 (i=2, L/R=0, beta=1)
+
+g = 2,    m=1
+maximum = 2.220446049250313e-16 at 7 (i=1, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+minimum = -4.440892098500626e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 7 (i=1, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=6
+maximum = 2.220446049250313e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 1.1102230246251565e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 22 (i=5, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 1.6653345369377348e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 34 (i=8, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.7755575615628914e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -1.942890293094024e-16 at 38 (i=9, L/R=1, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 36 (i=9, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
+
+g = 2,    m=0
+maximum = 2.7755575615628914e-16 at 12 (i=3, L/R=0, beta=0)
+minimum = -3.3306690738754696e-16 at 27 (i=6, L/R=1, beta=1)
+
+g = 2,    m=1
+maximum = 2.220446049250313e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 1.6653345369377348e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 7 (i=1, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -5.551115123125783e-17 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=6
+maximum = 1.6653345369377348e-16 at 23 (i=5, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 3 (i=0, L/R=1, beta=1)
+minimum = -5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -5.551115123125783e-17 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 2.7755575615628914e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -1.1102230246251565e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.7755575615628914e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 2.220446049250313e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 23 (i=5, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 23 (i=5, L/R=1, beta=1)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 31 (i=7, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 18 (i=4, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 35 (i=8, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 23 (i=5, L/R=1, beta=1)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 27 (i=6, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=8
+maximum = 0.0 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 16 (i=4, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 2.220446049250313e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 1.6653345369377348e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 4.440892098500626e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 25 (i=6, L/R=0, beta=1)
+
+g = 2,    m=1
+maximum = 1.6653345369377348e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 3 (i=0, L/R=1, beta=1)
+minimum = -2.7755575615628914e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 34 (i=8, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 2.220446049250313e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
+
+g = 2,    m=5
+maximum = 2.7755575615628914e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 19 (i=4, L/R=1, beta=1)
+
+g = 2,    m=7
+maximum = 1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -5.551115123125783e-17 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 5.551115123125783e-17 at 20 (i=5, L/R=0, beta=0)
+minimum = -5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
+
+g = 2,    m=9
+maximum = 1.6653345369377348e-16 at 13 (i=3, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.6653345369377348e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 2.220446049250313e-16 at 19 (i=4, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 5 (i=1, L/R=0, beta=1)
+
+g = 2,    m=13
+maximum = 2.7755575615628914e-16 at 20 (i=5, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 28 (i=7, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 27 (i=6, L/R=1, beta=1)
+
+g = 2,    m=15
+maximum = 3.3306690738754696e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=0
+maximum = 2.7755575615628914e-16 at 22 (i=5, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=1
+maximum = 3.3306690738754696e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 32 (i=8, L/R=0, beta=0)
+
+g = 2,    m=2
+maximum = 2.220446049250313e-16 at 4 (i=1, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 2.220446049250313e-16 at 17 (i=4, L/R=0, beta=1)
+minimum = -6.661338147750939e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 2.220446049250313e-16 at 15 (i=3, L/R=1, beta=1)
+minimum = -2.220446049250313e-16 at 2 (i=0, L/R=1, beta=0)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 2 (i=0, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=8
+maximum = 0.0 at 0 (i=0, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=9
+maximum = 0.0 at 1 (i=0, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 1.1102230246251565e-16 at 9 (i=2, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=11
+maximum = 1.6653345369377348e-16 at 20 (i=5, L/R=0, beta=0)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=12
+maximum = 2.7755575615628914e-16 at 27 (i=6, L/R=1, beta=1)
+minimum = -3.3306690738754696e-16 at 24 (i=6, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 2.7755575615628914e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -2.7755575615628914e-16 at 21 (i=5, L/R=0, beta=1)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -1.6653345369377348e-16 at 16 (i=4, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 2.220446049250313e-16 at 33 (i=8, L/R=0, beta=1)
+minimum = -1.6653345369377348e-16 at 23 (i=5, L/R=1, beta=1)
+
+g = 2,    m=0
+maximum = 1.6653345369377348e-16 at 26 (i=6, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 29 (i=7, L/R=0, beta=1)
+
+g = 2,    m=1
+maximum = 1.6653345369377348e-16 at 6 (i=1, L/R=1, beta=0)
+minimum = -2.7755575615628914e-16 at 27 (i=6, L/R=1, beta=1)
+
+g = 2,    m=2
+maximum = 1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -2.7755575615628914e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=3
+maximum = 2.220446049250313e-16 at 21 (i=5, L/R=0, beta=1)
+minimum = -3.3306690738754696e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=4
+maximum = 1.6653345369377348e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+
+g = 2,    m=5
+maximum = 1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+minimum = -1.1102230246251565e-16 at 3 (i=0, L/R=1, beta=1)
+
+g = 2,    m=6
+maximum = 1.1102230246251565e-16 at 11 (i=2, L/R=1, beta=1)
+minimum = -1.6653345369377348e-16 at 6 (i=1, L/R=1, beta=0)
+
+g = 2,    m=7
+maximum = 5.551115123125783e-17 at 7 (i=1, L/R=1, beta=1)
+minimum = -5.551115123125783e-17 at 0 (i=0, L/R=0, beta=0)
+
+g = 2,    m=8
+maximum = 1.1102230246251565e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -5.551115123125783e-17 at 13 (i=3, L/R=0, beta=1)
+
+g = 2,    m=9
+maximum = 5.551115123125783e-17 at 5 (i=1, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 8 (i=2, L/R=0, beta=0)
+
+g = 2,    m=10
+maximum = 2.220446049250313e-16 at 25 (i=6, L/R=0, beta=1)
+minimum = -1.1102230246251565e-16 at 10 (i=2, L/R=1, beta=0)
+
+g = 2,    m=11
+maximum = 1.1102230246251565e-16 at 29 (i=7, L/R=0, beta=1)
+minimum = -2.220446049250313e-16 at 9 (i=2, L/R=0, beta=1)
+
+g = 2,    m=12
+maximum = 1.1102230246251565e-16 at 14 (i=3, L/R=1, beta=0)
+minimum = -3.3306690738754696e-16 at 28 (i=7, L/R=0, beta=0)
+
+g = 2,    m=13
+maximum = 1.6653345369377348e-16 at 36 (i=9, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 20 (i=5, L/R=0, beta=0)
+
+g = 2,    m=14
+maximum = 2.220446049250313e-16 at 24 (i=6, L/R=0, beta=0)
+minimum = -2.220446049250313e-16 at 4 (i=1, L/R=0, beta=0)
+
+g = 2,    m=15
+maximum = 1.1102230246251565e-16 at 18 (i=4, L/R=1, beta=0)
+minimum = -2.220446049250313e-16 at 16 (i=4, L/R=0, beta=0)
 

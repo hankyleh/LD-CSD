@@ -7,9 +7,9 @@ import numpy as np
 def high_order(mesh):
     if options.scheme["method"] == "high_order_transport":
         # run high-order iteration scheme here
-        scalar, _ = transport.energy_pass(mesh)
+        scalar, angular = transport.energy_pass(mesh)
         
-        return scalar
+        return scalar, angular
     else:
         raise Exception(f"Unrecognized run mode '{options.scheme["method"]}'")
         return 1

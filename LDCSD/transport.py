@@ -294,9 +294,62 @@ def high_order_ingroup_iteration(g: int,
 
     return scalar_g, angular
 
-def calculate_closure(F_closure, F_bound, angular_flux, mesh : Mesh):
+def calculate_closure(F_closure, F_bound, angular_flux, incoming_L, incoming_R):
     # calculate 'F' closure term for a single group for use in SMM equation.
     # F = int_{-1}^1 d\mu ((1/3) - \mu&2)\psi(x, \mu)
+
+    F_closure[:] = np.zeros((4*LDCSD.I))
+    F_minus = np.zeros((4*LDCSD.I))
+    F_plus = np.zeros((4*LDCSD.I))
+
+    F_plus_bound = np.zeros((2))
+    F_minus_bound = np.zeros((2))
+
+    for m in range(0, LDCSD.M):
+        print(f"Angular flux, mu={LDCSD.mu[m]}")
+        print(angular_flux[m])
+        print("closure contribution")
+        print(angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2))
+
+        F_closure[:] +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+
+        if LDCSD.mu[m] < 0:
+            F_minus +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+            F_minus_bound +=  incoming_R[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+        else:
+            F_plus +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+            F_plus_bound +=  incoming_L[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+    F_total = np.zeros((2*(LDCSD.I+1)))
+    for i in range(1, LDCSD.I):
+        F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
+            F_plus[np.ravel_multi_index((i-1, 1, 0), (LDCSD.I, 2, 2))] +
+            F_minus[np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
+        F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
+            F_plus[np.ravel_multi_index((i-1, 1, 1), (LDCSD.I, 2, 2))] +
+            F_minus[np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
+    
+    # left boundary
+    i = 0
+    F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
+        F_plus_bound[0] +
+        F_minus[np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
+    F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
+        F_plus_bound[1] +
+        F_minus[np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
+
+    # right boundary
+    i = LDCSD.I
+    F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
+        F_plus[np.ravel_multi_index((i-1, 1, 0), (LDCSD.I, 2, 2))] +
+        F_minus_bound[0])
+    F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
+        F_plus[np.ravel_multi_index((i-1, 1, 1), (LDCSD.I, 2, 2))] +
+        F_minus_bound[1])
+    
+    F_bound[:] = F_total
+
+
+    print(F_closure[:])
 
     # Result : write F and F_bound (cell-edge closure) to variables 'F_closure' and 'F_bound'
 

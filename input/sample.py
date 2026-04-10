@@ -57,7 +57,7 @@ bcs = LDCSD.Boundaries(
 
 mesh = LDCSD.Mesh(
     x_edges = x_mesh, 
-    group_bounds = e_mesh,
+    group_boundaries = e_mesh,
     mat_regions = regions,
     bounds = bcs,
     angles = s16angles,
@@ -67,7 +67,7 @@ mesh = LDCSD.Mesh(
 # print(mesh.x_bounds)
 # print(mesh.cell_centers)
 
-# for g in range(0, mesh.G):
+# for g in range(0, LDCSD.G):
 #     print(f"constants, group {g}")
 #     print("total:")
 #     print(mesh.xs_total[g])
@@ -86,7 +86,7 @@ x = LDCSD.high_order(mesh)
 
 plt.figure()
 I = x_mesh.size-1
-for g in range(0, mesh.G):
+for g in range(0, LDCSD.G):
     plot_mesh = np.array([])
     plot_up = np.array([])
     plot_down = np.array([])

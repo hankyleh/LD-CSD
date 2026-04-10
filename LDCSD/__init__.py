@@ -16,11 +16,17 @@ from LDCSD.main import high_order
 # Angular Quadrature
 mu = None
 w = None
+M = None
 
-
+# spatial mesh
 x_bounds = None
 I = None
 regions = None
 boundaries = None
 cell_centers = None
 dx = None
+
+# energy group structure
+group_bounds = None
+G = None
+dE = None

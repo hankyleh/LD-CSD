@@ -154,7 +154,7 @@ def solve_DO(m : int,
     # spatial mesh sweep for one Discrete Ordinate (DO) and energy group
     
     mu = LDCSD.mu[m]
-    dE = mesh.dE[g]
+    dE = LDCSD.dE[g]
     dx = LDCSD.dx
     I = LDCSD.I
 
@@ -198,12 +198,12 @@ def sweep(g : int,
 
     print(f"performing sweep in group {g}")
 
-    angular_flux = np.zeros((mesh.M, 4*LDCSD.I))
+    angular_flux = np.zeros((LDCSD.M, 4*LDCSD.I))
     
     psi = np.zeros((4*LDCSD.I))
     scalar_flux = np.zeros((4*LDCSD.I))
 
-    for m in  range(0, mesh.M):
+    for m in  range(0, LDCSD.M):
         psi, ang_residuals = solve_DO(m, g, mesh, xs_total_g, stop_power_g, 
                  stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux[m], q_g)
         scalar_flux += LDCSD.w[m]*psi
@@ -222,7 +222,7 @@ def sweep(g : int,
 def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
     I = LDCSD.I
     dx = LDCSD.dx
-    dE = mesh.dE
+    dE = LDCSD.dE
     source = np.zeros((4*LDCSD.I))
 
     fespace = LD_space(mesh, g)
@@ -232,7 +232,7 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
     m11 = fespace.M[1, 1]
     
     
-    for gp in range(0, mesh.G):
+    for gp in range(0, LDCSD.G):
         sc = scalar[gp]
          
         if gp == g:
@@ -275,7 +275,7 @@ def high_order_ingroup_iteration(g: int,
     rel_change = 1
     s = 0
 
-    # initial_angular = np.ones((mesh.M, 4*LDCSD.I))
+    # initial_angular = np.ones((LDCSD.M, 4*LDCSD.I))
     initial_scalar = np.transpose(initial_angular) @ LDCSD.w
     scalar_g = initial_scalar.copy()
     angular = initial_angular.copy()
@@ -307,19 +307,19 @@ def energy_pass(mesh : Mesh):
 
     # within each energy group, iterate on scattering source
 
-    scalar_result = np.zeros((mesh.G, 4*LDCSD.I))
-    angular_result = np.zeros((mesh.G, mesh.M, 4*LDCSD.I))
-    initial_angular = np.zeros((mesh.G, mesh.M, 4*LDCSD.I))
+    scalar_result = np.zeros((LDCSD.G, 4*LDCSD.I))
+    angular_result = np.zeros((LDCSD.G, LDCSD.M, 4*LDCSD.I))
+    initial_angular = np.zeros((LDCSD.G, LDCSD.M, 4*LDCSD.I))
 
-    upwind_e_flux = np.zeros((mesh.M, 4*LDCSD.I))
+    upwind_e_flux = np.zeros((LDCSD.M, 4*LDCSD.I))
 
-    for g in range(0, mesh.G):
+    for g in range(0, LDCSD.G):
 
         if g > 0:
             stop_power_bound_up = mesh.stopping_power_d[g-1]
         else:
             stop_power_bound_up = 0 * (mesh.stopping_power_d[g-1])
-            upwind_e_flux = np.zeros((mesh.M, 4*LDCSD.I))
+            upwind_e_flux = np.zeros((LDCSD.M, 4*LDCSD.I))
 
         change = 1
         n=0

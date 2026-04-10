@@ -9,7 +9,7 @@ class LD_space:
                  mesh : Mesh, 
                  g : int,
                  lumped=False):
-        self.group_bounds = mesh.group_bounds
+        self.group_bounds = LDCSD.group_bounds
         self.x_bounds = LDCSD.x_bounds
         self.Nx = self.x_bounds.size - 1
         self.g = g

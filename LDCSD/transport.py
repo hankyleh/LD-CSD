@@ -1,3 +1,11 @@
+# Copyright (c) 2026, Kyle Hansen (khansen3@ncsu.edu)
+#
+# Supported by CARRE (https://carre-psaapiv.org/) and NCSU
+#
+# Licensed under BSD 3-Clause License; Redistribution and use in source and binary 
+# forms, with or without modification are permitted provided that the terms of the
+# license are met.
+
 from .fem import *
 from .mesh import Mesh
 import numpy as np
@@ -47,36 +55,36 @@ def form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound, M)
         mdx = mu*dx[i]
         # up, L
         if (i > 0) or (mu < 0):
-            A.append((-1/6)*mdx, ind_L_u, ind_L_d_b)
-            A.append((-1/3)*mdx, ind_L_u, ind_L_u_b)
-        A.append((1/12)*mdx, ind_L_u, ind_L_d)
-        A.append((1/12)*mdx, ind_L_u, ind_R_d)
-        A.append((1/6)*mdx, ind_L_u, ind_L_u)
-        A.append((1/6)*mdx, ind_L_u, ind_R_u)
+            A.append((-1/6)*mu, ind_L_u, ind_L_d_b)
+            A.append((-1/3)*mu, ind_L_u, ind_L_u_b)
+        A.append((1/12)*mu, ind_L_u, ind_L_d)
+        A.append((1/12)*mu, ind_L_u, ind_R_d)
+        A.append((1/6)*mu, ind_L_u, ind_L_u)
+        A.append((1/6)*mu, ind_L_u, ind_R_u)
         # up, R
         if (i<I-1) or (mu > 0):
-            A.append((1/6)*mdx, ind_R_u, ind_R_d_b)
-            A.append((1/3)*mdx, ind_R_u, ind_R_u_b)
-        A.append((-1/12)*mdx, ind_R_u, ind_L_d)
-        A.append((-1/12)*mdx, ind_R_u, ind_R_d)
-        A.append((-1/6)*mdx, ind_R_u, ind_L_u)
-        A.append((-1/6)*mdx, ind_R_u, ind_R_u)
+            A.append((1/6)*mu, ind_R_u, ind_R_d_b)
+            A.append((1/3)*mu, ind_R_u, ind_R_u_b)
+        A.append((-1/12)*mu, ind_R_u, ind_L_d)
+        A.append((-1/12)*mu, ind_R_u, ind_R_d)
+        A.append((-1/6)*mu, ind_R_u, ind_L_u)
+        A.append((-1/6)*mu, ind_R_u, ind_R_u)
         # dwn L
         if (i > 0) or (mu < 0):
-            A.append((-1/3)*mdx, ind_L_d, ind_L_d_b)
-            A.append((-1/6)*mdx, ind_L_d, ind_L_u_b)
-        A.append((1/6)*mdx, ind_L_d, ind_L_d)
-        A.append((1/6)*mdx, ind_L_d, ind_R_d)
-        A.append((1/12)*mdx, ind_L_d, ind_L_u)
-        A.append((1/12)*mdx, ind_L_d, ind_R_u)
+            A.append((-1/3)*mu, ind_L_d, ind_L_d_b)
+            A.append((-1/6)*mu, ind_L_d, ind_L_u_b)
+        A.append((1/6)*mu, ind_L_d, ind_L_d)
+        A.append((1/6)*mu, ind_L_d, ind_R_d)
+        A.append((1/12)*mu, ind_L_d, ind_L_u)
+        A.append((1/12)*mu, ind_L_d, ind_R_u)
         # dwn R
         if (i<I-1) or (mu > 0):
-            A.append((1/3)*mdx, ind_R_d, ind_R_d_b)
-            A.append((1/6)*mdx, ind_R_d, ind_R_u_b)
-        A.append((-1/6)*mdx, ind_R_d, ind_L_d)
-        A.append((-1/6)*mdx, ind_R_d, ind_R_d)
-        A.append((-1/12)*mdx, ind_R_d, ind_L_u)
-        A.append((-1/12)*mdx, ind_R_d, ind_R_u)
+            A.append((1/3)*mu, ind_R_d, ind_R_d_b)
+            A.append((1/6)*mu, ind_R_d, ind_R_u_b)
+        A.append((-1/6)*mu, ind_R_d, ind_L_d)
+        A.append((-1/6)*mu, ind_R_d, ind_R_d)
+        A.append((-1/12)*mu, ind_R_d, ind_L_u)
+        A.append((-1/12)*mu, ind_R_d, ind_R_u)
     
     # absorption + slowing-down
         # up, L
@@ -101,7 +109,8 @@ def form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound, M)
         A.append((v4[i]*m10),ind_R_d , ind_L_u)
         A.append((v4[i]*m11),ind_R_d , ind_R_u)
 
-def form_HO_RHS(b, dx, dE, I, M, stop_power_bound, upwind_e_flux, scatter_source, q_g):
+def form_HO_RHS(b, dx, dE, I, M, stop_power_bound, upwind_e_flux, 
+                scatter_source, q_g , m, g):
     # left boundary
     # right boundary
     m00 = M[0, 0]
@@ -133,11 +142,36 @@ def form_HO_RHS(b, dx, dE, I, M, stop_power_bound, upwind_e_flux, scatter_source
         b.append((dxi*m10/6)*(2*q_g[ind_L_d] + q_g[ind_L_u]),ind_R_d)
         b.append((dxi*m11/6)*(2*q_g[ind_R_d] + q_g[ind_R_u]),ind_R_d)
     # CSD source
-        b.append(((dxi/dE)*stop_power_bound[i]*(m00*upwind_e_flux[ind_L_d] + m01*upwind_e_flux[ind_R_d])),ind_L_u)
-        b.append(((dxi/dE)*stop_power_bound[i]*(m10*upwind_e_flux[ind_L_d] + m11*upwind_e_flux[ind_R_d])), ind_R_u)
+        b.append(((dxi/dE)*stop_power_bound[i]*(m00*upwind_e_flux[ind_L_d] + 
+                                                m01*upwind_e_flux[ind_R_d])),ind_L_u)
+        b.append(((dxi/dE)*stop_power_bound[i]*(m10*upwind_e_flux[ind_L_d] + 
+                                                m11*upwind_e_flux[ind_R_d])), ind_R_u)
 
-    # Boundary cells TODO
-
+    # left boundary cell
+    i = 0
+    if LDCSD.mu[m] > 0:
+        ind_L_d = np.ravel_multi_index((i, 0, 0), (I, 2, 2))
+        ind_L_u = np.ravel_multi_index((i, 0, 1), (I, 2, 2))
+        b.append((LDCSD.mu[m]/6)*
+                 (LDCSD.left_BC[m, np.ravel_multi_index((g, 0), (LDCSD.G, 2))] + 
+                  2*LDCSD.left_BC[m, np.ravel_multi_index((g, 1), (LDCSD.G, 2))]),
+                   ind_L_u )
+        b.append((LDCSD.mu[m]/6)*
+                 (2*LDCSD.left_BC[m, np.ravel_multi_index((g, 0), (LDCSD.G, 2))] + 
+                  LDCSD.left_BC[m, np.ravel_multi_index((g, 1), (LDCSD.G, 2))]),
+                   ind_L_d )
+    i = I-1
+    if LDCSD.mu[m] < 0:
+        ind_R_d = np.ravel_multi_index((i, 1, 0), (I, 2, 2))
+        ind_R_u = np.ravel_multi_index((i, 1, 1), (I, 2, 2))
+        b.append(-(LDCSD.mu[m]/6)*
+                 (LDCSD.right_BC[m, np.ravel_multi_index((g, 0), (LDCSD.G, 2))] + 
+                  2*LDCSD.right_BC[m, np.ravel_multi_index((g, 1), (LDCSD.G, 2))]),
+                   ind_R_u )
+        b.append((-LDCSD.mu[m]/6)*
+                 (2*LDCSD.right_BC[m, np.ravel_multi_index((g, 0), (LDCSD.G, 2))] + 
+                  LDCSD.right_BC[m, np.ravel_multi_index((g, 1), (LDCSD.G, 2))]),
+                   ind_R_d )
 
 
 def solve_DO(m : int,
@@ -160,8 +194,8 @@ def solve_DO(m : int,
 
     # Initialize Bilinear and Linear forms
     fespace = LD_space(mesh, g)
-    A = bilinear(fespace)
-    b = linear(fespace)
+    A = bilinear(4*I)
+    b = linear(4*I)
 
     size = 4*LDCSD.I
 
@@ -169,8 +203,10 @@ def solve_DO(m : int,
 
     b.zero()
 
-    form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, stop_power_bound_down, fespace.M)
-    form_HO_RHS(b, dx, dE, I, fespace.M, stop_power_bound_up, upwind_e_flux, scatter_source, q_g)
+    form_HO_LHS(A, mu, dx, dE, I, xs_total_g, stop_power_g, 
+                stop_power_bound_down, fespace.M)
+    form_HO_RHS(b, dx, dE, I, fespace.M, stop_power_bound_up, upwind_e_flux, 
+                scatter_source, q_g, m, g)
     sA_iLU = scipy.sparse.linalg.spilu(A.matrix.tocsr())
     M = scipy.sparse.linalg.LinearOperator((size, size), sA_iLU.solve)
     # Solve Linear system
@@ -205,7 +241,7 @@ def sweep(g : int,
 
     for m in  range(0, LDCSD.M):
         psi, ang_residuals = solve_DO(m, g, mesh, xs_total_g, stop_power_g, 
-                 stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux[m], q_g)
+                 stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux[m], q_g[m])
         scalar_flux += LDCSD.w[m]*psi
         angular_flux[m] = psi
         if options.residuals == True:
@@ -213,8 +249,10 @@ def sweep(g : int,
             coord_min = np.unravel_index(np.argmin(ang_residuals), (LDCSD.I, 2, 2))
             with open(options.residual_file, "a") as txt:
                 txt.write(f"g = {g},    m={m}\n")
-                txt.write(f"maximum = {np.max(ang_residuals)} at {np.argmax(ang_residuals)} (i={coord_max[0]}, L/R={coord_max[1]}, beta={coord_max[2]})\n")
-                txt.write(f"minimum = {np.min(ang_residuals)} at {np.argmin(ang_residuals)} (i={coord_min[0]}, L/R={coord_min[1]}, beta={coord_min[2]})\n")
+                txt.write(f"maximum = {np.max(ang_residuals)} at {
+                    np.argmax(ang_residuals)} (i={coord_max[0]}, L/R={coord_max[1]}, beta={coord_max[2]})\n")
+                txt.write(f"minimum = {np.min(ang_residuals)} at {
+                    np.argmin(ang_residuals)} (i={coord_min[0]}, L/R={coord_min[1]}, beta={coord_min[2]})\n")
                 txt.write("\n")
         
     return scalar_flux, angular_flux
@@ -245,11 +283,15 @@ def compute_scatter_source(g, scalar_g, scalar, xs_scatter, mesh : Mesh):
             ind_R_d = np.ravel_multi_index((i, 1, 0), (I, 2, 2))
             ind_R_u = np.ravel_multi_index((i, 1, 1), (I, 2, 2))
 
-            source[ind_L_u] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
-            source[ind_R_u] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
+            source[ind_L_u] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*(
+                (m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
+            source[ind_R_u] += (
+                dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
 
-            source[ind_L_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
-            source[ind_R_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*((m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
+            source[ind_L_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*(
+                (m00*(sc[ind_L_u]+sc[ind_L_d]))+(m01*(sc[ind_R_u]+sc[ind_R_d])))
+            source[ind_R_d] += (dx[i]*dE[gp]/8)*xs_scatter[gp, g, i]*(
+                (m10*(sc[ind_L_u]+sc[ind_L_d]))+(m11*(sc[ind_R_u]+sc[ind_R_d])))
 
     return source
 
@@ -286,7 +328,9 @@ def high_order_ingroup_iteration(g: int,
 
         prev_angular = angular*1
         
-        scalar_g, angular = sweep(g, mesh, xs_total_g, stop_power_g, stop_power_bound_down, stop_power_bound_up, scatter_source, upwind_e_flux, q_g)
+        scalar_g, angular = sweep(g, mesh, xs_total_g, stop_power_g, 
+                                  stop_power_bound_down, stop_power_bound_up, 
+                                  scatter_source, upwind_e_flux, q_g)
         max_change = np.max(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
         max_loc = np.argmax(np.abs(prev_angular - angular)*np.power(prev_angular, -1))
         rel_change = np.linalg.norm(np.abs(prev_angular - angular)/prev_angular)
@@ -294,69 +338,220 @@ def high_order_ingroup_iteration(g: int,
 
     return scalar_g, angular
 
-def calculate_closure(F_closure, F_bound, angular_flux, incoming_L, incoming_R):
+def calculate_closure(g, F_closure, F_bound, angular_flux):
     # calculate 'F' closure term for a single group for use in SMM equation.
     # F = int_{-1}^1 d\mu ((1/3) - \mu&2)\psi(x, \mu)
+
+    # Result : write F and F_bound (cell-edge closure) 
+    # to variables 'F_closure' and 'F_bound'
 
     F_closure[:] = np.zeros((4*LDCSD.I))
     F_minus = np.zeros((4*LDCSD.I))
     F_plus = np.zeros((4*LDCSD.I))
 
+    F_total = np.zeros(2*(LDCSD.I+1))
+
     F_plus_bound = np.zeros((2))
     F_minus_bound = np.zeros((2))
 
+    mu = LDCSD.mu
+    w = LDCSD.w
+
     for m in range(0, LDCSD.M):
-        print(f"Angular flux, mu={LDCSD.mu[m]}")
-        print(angular_flux[m])
-        print("closure contribution")
-        print(angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2))
+        F_closure[:] +=  angular_flux[m] * w[m] * ((1/3) - (mu[m])**2)
 
-        F_closure[:] +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+        if mu[m] > 0:
+            # contribute to F_plus
+            F_plus_bound[0] += LDCSD.left_BC[m, 2*g]*w[m]*((1/3) - (mu[m])**2)
+            F_plus_bound[1] +=LDCSD.left_BC[m, 2*g + 1]*w[m]*((1/3) - (mu[m])**2)
 
-        if LDCSD.mu[m] < 0:
-            F_minus +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
-            F_minus_bound +=  incoming_R[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
+            F_plus +=  angular_flux[m]  * w[m]*((1/3) - (mu[m])**2)
         else:
-            F_plus +=  angular_flux[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
-            F_plus_bound +=  incoming_L[m] * LDCSD.w[m] * ((1/3) - (LDCSD.mu[m])**2)
-    F_total = np.zeros((2*(LDCSD.I+1)))
-    for i in range(1, LDCSD.I):
-        F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
-            F_plus[np.ravel_multi_index((i-1, 1, 0), (LDCSD.I, 2, 2))] +
-            F_minus[np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
-        F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
-            F_plus[np.ravel_multi_index((i-1, 1, 1), (LDCSD.I, 2, 2))] +
-            F_minus[np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
-    
-    # left boundary
-    i = 0
-    F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
-        F_plus_bound[0] +
-        F_minus[np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
-    F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
-        F_plus_bound[1] +
-        F_minus[np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
+            F_minus_bound[0] += LDCSD.right_BC[m, 2*g]*w[m]*((1/3) - (mu[m])**2)
+            F_minus_bound[1] +=LDCSD.right_BC[m, 2*g + 1]*w[m]*((1/3) - (mu[m])**2)
+            F_minus +=  angular_flux[m]  * w[m]*((1/3) - (mu[m])**2)
+            # contribute to F_minus
 
-    # right boundary
-    i = LDCSD.I
-    F_total[np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))] = (
-        F_plus[np.ravel_multi_index((i-1, 1, 0), (LDCSD.I, 2, 2))] +
-        F_minus_bound[0])
-    F_total[np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))] = (
-        F_plus[np.ravel_multi_index((i-1, 1, 1), (LDCSD.I, 2, 2))] +
-        F_minus_bound[1])
-    
+    # for each left boundary, add F_minus
+    for i in range(0, LDCSD.I):
+        ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+        ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+
+        ind_L_u = np.ravel_multi_index((i, 0, 0), (LDCSD.I, 2, 2))
+        ind_L_d = np.ravel_multi_index((i, 0, 0), (LDCSD.I, 2, 2))
+
+        F_total[ind_d] += F_minus[ind_L_d]
+        F_total[ind_u] += F_minus[ind_L_u]
+
+    # for each right boundary, add F_plus
+    for i in range(1, LDCSD.I+1):
+        ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+        ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+
+        ind_R_u = np.ravel_multi_index((i-1, 1, 1), (LDCSD.I, 2, 2))
+        ind_R_d = np.ravel_multi_index((i-1, 1, 0), (LDCSD.I, 2, 2))
+        
+        F_total[ind_d] += F_plus[ind_R_d]
+        F_total[ind_u] += F_plus[ind_R_u]
+
+    # left BC
+    i=0
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+
+    F_total[ind_d] += F_plus_bound[0]
+    F_total[ind_u] += F_plus_bound[1]
+
+    # right BC
+    i=LDCSD.I
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+
+    F_total[ind_d] += F_minus_bound[0]
+    F_total[ind_u] += F_minus_bound[1]
+
     F_bound[:] = F_total
 
 
-    print(F_closure[:])
-
-    # Result : write F and F_bound (cell-edge closure) to variables 'F_closure' and 'F_bound'
 
 
-    pass
+def calculate_t_bdry(T_plus, T_minus, angular_flux):
+    # calculates T+/- boundary term (for differencing scalar flux)
+    # T- = 1/2 sum_m (w_m ((3\mu_m / 2) - (\mu_m / |\mu_m|))) psi_L
+    # T+ = 1/2 sum_m (w_m ((\mu_m / |\mu_m|) - (3\mu_m /2))) psi_R
+
+    T_plus[:] = 0
+    T_minus[:] = 0
+
+    T_total = np.zeros((2*(LDCSD.I+1))) # I+1, u/d
+
+    for m in range(0, LDCSD.M):
+        mu = LDCSD.mu[m]
+        w = LDCSD.w[m]
+        for i in range(0, LDCSD.I):
+            # cell-wise, not interface-wise
+            T_minus[i, 0] += ((1/2)*w * ((3*mu/2) - (mu/np.abs(mu))) 
+                           * angular_flux[m, np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
+            T_minus[i, 1] += ((1/2)*w * ((3*mu/2) - (mu/np.abs(mu))) 
+                           * angular_flux[m, np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
+            T_plus[i, 0] += ((1/2)*w * -((3*mu/2) - (mu/np.abs(mu))) 
+                           * angular_flux[m, np.ravel_multi_index((i, 1, 0),(LDCSD.I, 2, 2))])
+            T_plus[i, 1] += ((1/2)*w * -((3*mu/2) - (mu/np.abs(mu))) 
+                           * angular_flux[m, np.ravel_multi_index((i, 1, 1),(LDCSD.I, 2, 2))])
+        # here, i is the index of the INTERFACE
+
+    # LHS, leftward flux only
+    i=0
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    T_total[ind_d] += T_minus[0, 0]
+    T_total[ind_u] += T_minus[0, 1]
+
+
+    # RHS, rightward flux only
+    i=LDCSD.I
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    T_total[ind_d] += T_plus[i-1, 0]
+    T_total[ind_u] += T_plus[i-1, 1]
+
+
+    # interior cells, both contribute
+    for i in range(1, LDCSD.I):
+        ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+        ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+
+        T_total[ind_u] += T_plus[i-1, 1] + T_minus[i, 1]
+        T_total[ind_d] += T_plus[i-1, 0] + T_minus[i, 0]
+    return T_total
+
+def calculate_k_bdry(K_plus, K_minus, angular_flux):
+    # calculates T+/- boundary term (for differencing scalar flux)
+    # T- = 1/2 sum_m (w_m ((3\mu_m / 2) - (\mu_m / |\mu_m|))) psi_L
+    # T+ = 1/2 sum_m (w_m ((\mu_m / |\mu_m|) - (3\mu_m /2))) psi_R
+
+    K_plus[:] = 0
+    K_minus[:] = 0
+
+    K_total = np.zeros((2*(LDCSD.I+1))) # I+1, u/d
+
+    for m in range(0, LDCSD.M):
+        mu = LDCSD.mu[m]
+        w = LDCSD.w[m]
+        for i in range(0, LDCSD.I):
+            K_minus[i, 0] += ((1/4)*w * (1 - 2*np.abs(mu)) 
+                           * angular_flux[m, np.ravel_multi_index((i, 0, 0),(LDCSD.I, 2, 2))])
+            K_minus[i, 1] += ((1/4)*w * (1 - 2*np.abs(mu)) 
+                           * angular_flux[m, np.ravel_multi_index((i, 0, 1),(LDCSD.I, 2, 2))])
+            K_plus[i, 0] += ((1/4)*w * (2*np.abs(mu) - 1) 
+                           * angular_flux[m, np.ravel_multi_index((i, 1, 0),(LDCSD.I, 2, 2))])
+            K_plus[i, 1] += ((1/4)*w * (2*np.abs(mu) - 1) 
+                           * angular_flux[m, np.ravel_multi_index((i, 1, 1),(LDCSD.I, 2, 2))])
+    
+    # here, i is the index of the INTERFACE
+
+    # LHS, leftward flux only
+    i=0
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    K_total[ind_d] += K_minus[0, 0]
+    K_total[ind_u] += K_minus[0, 1]
+
+
+    # RHS, rightward flux only
+    i=LDCSD.I
+    ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+    ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+    K_total[ind_d] += K_plus[i-1, 0]
+    K_total[ind_u] += K_plus[i-1, 1]
+
+
+    # interior cells, both contribute
+    for i in range(1, LDCSD.I):
+        ind_u = np.ravel_multi_index((i, 1), (LDCSD.I+1, 2))
+        ind_d = np.ravel_multi_index((i, 0), (LDCSD.I+1, 2))
+
+        K_total[ind_u] += K_plus[i-1, 1] + K_minus[i, 1]
+        K_total[ind_d] += K_plus[i-1, 0] + K_minus[i, 0]
+    return K_total
+
 
 def energy_pass(mesh : Mesh):
+    
+    scalar_result = np.zeros((LDCSD.G, 4*LDCSD.I))
+    angular_result = np.zeros((LDCSD.G, LDCSD.M, 4*LDCSD.I))
+    initial_angular = np.zeros((LDCSD.G, LDCSD.M, 4*LDCSD.I))
+
+    for g in range(0, LDCSD.G):
+
+        if g > 0:
+            stop_power_bound_up = mesh.stopping_power_d[g-1]
+        else:
+            stop_power_bound_up = 0 * (mesh.stopping_power_d[g-1])
+            upwind_e_flux = np.zeros((LDCSD.M, 4*LDCSD.I))
+
+        scalar, angular = high_order_ingroup_iteration(g,
+                            mesh,
+                            angular_result[g],
+                            scalar_result,
+                            mesh.xs_total[g],
+                            mesh.stopping_power[g],
+                            mesh.stopping_power_d[g],
+                            stop_power_bound_up,
+                            upwind_e_flux,
+                            scalar_result[g],
+                            mesh.xs_scatter,
+                            mesh.angular_source[g])
+        scalar_result[g] = scalar
+        angular_result[g] = angular
+
+        # upwind_e_flux =  angular
+    return scalar_result, angular_result
+    
+
+    
+
+def scattering_iteration(mesh : Mesh):
 
     # within each energy group, iterate on scattering source
 
@@ -397,7 +592,7 @@ def energy_pass(mesh : Mesh):
             angular_result[g] = angular
 
         # upwind_e_flux =  angular
-    return scalar_result, angular
+    return scalar_result, angular_result
 
     # return angualar flux distribution for full energy spectrum
 

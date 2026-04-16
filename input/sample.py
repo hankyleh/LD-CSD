@@ -2,124 +2,76 @@ import LDCSD
 from LDCSD import options
 import matplotlib.pyplot as plt
 import numpy as np
-# Physics and parameters
-X = 10
-G = 3
-x_mesh = np.linspace(0, 10, X+1)
-e_mesh = np.linspace(0, 1000, G+1)
 
+
+# spatial discretization
+nx = 35
+X = 10
+x_mesh = np.linspace(0, X, nx+1)
+
+# angular discretization
+gauss_leg_angles, gauss_leg_weights = np.polynomial.legendre.leggauss(8)
+LDCSD.set_quadrature(gauss_leg_angles, gauss_leg_weights)
+
+# energy discretization
+G = 3
+e_mesh = np.linspace(0, 1000, G+1)
 dE = np.diff(e_mesh)
 
+LDCSD.set_group_struct(e_mesh)
 
-s16angles, s16weights = np.polynomial.legendre.leggauss(16)
-
-
-# Inputs, initialize LDCSD
+# problem parameters
 m1 = LDCSD.Material(
     G = G,
-    stopping_power=np.array([0.4, 0.6, 0.8]),
-    stopping_power_d = np.array([0.45, 0.65, 0.85]),
-    total = np.array([0.1, 3, 0.7]),
-    scatter = np.array([[0.0/dE[0], 0.085/dE[1], 0.0/dE[2]],   # value is *average* over E0,
+    stopping_power=np.array([0.4, 0.6, 0.8])*0,
+    stopping_power_d = np.array([0.45, 0.65, 0.85])*0,
+    total = np.array([1, 5, 10]),
+    scatter = 0*np.array([[0.2/dE[0], 0.8/dE[1], 0.0/dE[2]],   # value is *average* over E0,
                            [0.0/dE[0], 1.0/dE[1], 2.0/dE[2]],   # integral over E1.
-                           [0.0/dE[0], 0.0/dE[1], 0.3/dE[2]]]),
-    # scalar_source = np.array([0.5, 0.25, 0.1])
-    scalar_source = np.array([2, 0.5, 0])
-)
-
-m2 = LDCSD.Material(
-    G = G,
-    stopping_power=np.array([0.4, 0.6, 0.8]),
-    stopping_power_d = np.array([0.45, 0.65, 0.85]),
-    total = np.array([0.2, 0.8, 1.0]),
-    scatter = np.array([[0.1/dE[0], 0.1/dE[1], 0.0/dE[2]],   # value is *average* over E0,
-                           [0.0/dE[0], 0.45/dE[1], 0.05/dE[2]],   # integral over E1.
-                           [0.0/dE[0], 0.0/dE[1], 0.5/dE[2]]]),
-    # scalar_source = np.array([0.5, 0.25, 0.1])
-    scalar_source = np.array([2, 0.5, 0])
+                           [0.0/dE[0], 0.0/dE[1], 7.0/dE[2]]]),
+    scalar_source = np.array([0, 0, 0])
 )
 
 regions = LDCSD.Regions(
     # bounds = [0, 7.0, 10],
     # materials = [m1, m2]
-    bounds = [0, 10],
+    bounds = [0, X],
     materials = [m1]
 )
 
-bcs = LDCSD.Boundaries(
-    left = 0,
-    right = 0
-)
+LDCSD.boundary_condition(left=np.array([1.0, 0, 0]), 
+                         right=np.array([0.3, 0, 0]),
+                         left_mode = "incoming",
+                         right_mode = "incoming")
+
+
+
 
 mesh = LDCSD.Mesh(
     x_edges = x_mesh, 
     group_boundaries = e_mesh,
     mat_regions = regions,
-    bounds = bcs,
-    angles = s16angles,
-    weights = s16weights
+    angles = gauss_leg_angles,
+    weights = gauss_leg_weights
 )
 
-# print(mesh.x_bounds)
-# print(mesh.cell_centers)
 
-# for g in range(0, LDCSD.G):
-#     print(f"constants, group {g}")
-#     print("total:")
-#     print(mesh.xs_total[g])
-#     print("stopping_power:")
-#     print(mesh.stopping_power[g])
 
-# raise Exception(f"debug")
 
-# Run LDCSD
-# options = LDCSD.options(method = "high_order_transport")
+
+
+
+
+
+
+
 LDCSD.options.scheme["method"] = "high_order_transport"
 LDCSD.options.output_residuals()
 
 
 
 
-LDCSD.boundary_condition(left=np.array([1, 0, 0]), left_mode = "incoming")
+scalar = np.zeros((LDCSD.G, 4*LDCSD.I))
+angular = np.zeros((LDCSD.G, LDCSD.M, 4*LDCSD.I))
 
-
-# boundary conditions; [M by 2](angular, energy)
-incoming_L = np.zeros((LDCSD.M, 2))
-incoming_R = np.zeros((LDCSD.M, 2))
-
-
-x, angular = LDCSD.high_order(mesh)
-F_closure = np.zeros((4*LDCSD.I))
-F_bound = np.zeros((2*(LDCSD.I+1)))
-LDCSD.transport.calculate_closure(F_closure, F_bound, angular, incoming_L, incoming_R)
-
-print("closure value")
-print(F_closure)
-print("closure on boundaries")
-print(F_bound)
-
-
-
-plt.figure()
-I = x_mesh.size-1
-for g in range(0, LDCSD.G):
-    plot_mesh = np.array([])
-    plot_up = np.array([])
-    plot_down = np.array([])
-    for i in range(0, I):
-        plot_mesh = np.append(plot_mesh, [x_mesh[i], x_mesh[i+1]])
-        plot_up = np.append(plot_up, [
-            x[g, np.ravel_multi_index((i, 0, 0),(I, 2, 2))],
-            x[g, np.ravel_multi_index((i, 1, 0),(I, 2, 2))]
-        ])
-        plot_down = np.append(plot_down, [
-            x[g, np.ravel_multi_index((i, 0, 1),(I, 2, 2))],
-            x[g, np.ravel_multi_index((i, 1, 1),(I, 2, 2))]
-        ])
-
-    plt.plot(plot_mesh, plot_up, label=f"g{g}, up")
-    plt.plot(plot_mesh, plot_down, label=f"g{g}, down")
-plt.legend()
-# plt.savefig("fig.png")
-plt.ylim(bottom=0)
-plt.show()
+LDCSD.solve_smm(mesh, scalar, angular)

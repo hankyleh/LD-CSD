@@ -17,11 +17,7 @@ class Material:
 
         if (self.scalar_source is not None) and (self.angular_source is None):
             self.angular_source = 0.5 * self.scalar_source
-            print("angular source")
-            print(self.angular_source)
         elif (self.scalar_source is None) and (self.angular_source is not None):
             self.scalar_source = 2 * self.angular_source
-            print("scalar source")
-            print(self.scalar_source)
         
         # TODO set 'None' values to Gx1 array of zeros

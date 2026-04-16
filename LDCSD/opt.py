@@ -16,7 +16,6 @@ class Options:
         if kwargs.get("silence", True):
             self.silence()
         if 'method' in kwargs:
-            print(kwargs.get("method"))
             self.scheme["method"] = kwargs.get("method")
 
     def silence(self):

@@ -1,5 +1,5 @@
 ## sample problem based on a monodirectional beam incident on 2.7 g/cm aluminum, 
-# 4 groups, based on EPICS Al data (eyeball average xs)
+# 4 groups, based on EPICS Al data (eyeballed average xs)
 
 # group boundaries [10, 1e2, 1e3, 1e4, 1e5] eV.
 # Stopping power based on Fig 3.11 in Monte Carlo Transport of Electrons and Photons
